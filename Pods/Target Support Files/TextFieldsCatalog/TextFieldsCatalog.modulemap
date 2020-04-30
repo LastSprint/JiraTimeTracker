@@ -1,6 +1,0 @@
-framework module TextFieldsCatalog {
-  umbrella header "TextFieldsCatalog-umbrella.h"
-
-  export *
-  module * { export * }
-}

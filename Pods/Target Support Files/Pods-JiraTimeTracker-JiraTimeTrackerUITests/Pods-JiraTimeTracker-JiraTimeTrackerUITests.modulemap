@@ -1,6 +1,0 @@
-framework module Pods_JiraTimeTracker_JiraTimeTrackerUITests {
-  umbrella header "Pods-JiraTimeTracker-JiraTimeTrackerUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
