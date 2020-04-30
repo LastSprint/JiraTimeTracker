@@ -13,17 +13,26 @@
 		0A0AB7529266F51471C219D8 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9050649AA7131D999B6CE3AE /* Colors.swift */; };
 		0C7720C4965B1FC708CD7129 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BBC650093949B78908C4C32 /* Assets.xcassets */; };
 		1A5DCB83A565855FF0946A27 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B18F9A4E18773000F271A72 /* Localizable.strings */; };
+		24ABBF6A17F3942934AE7519 /* AuthModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A407C0CC1F8C081293BCD36 /* AuthModuleInput.swift */; };
 		27E4FCD550CB5452654B8556 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1347BE5081C315756CD443A /* Presentable.swift */; };
 		2A774E6365BB17618FF761E9 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0A6E69B7DF7A56C6FA3563 /* Coordinator.swift */; };
 		2D30C6DF51C0DEB8137A5EBB /* LaunchingApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417E415457A20FC10E766116 /* LaunchingApplicationService.swift */; };
+		2DA50EA97675FED94EA5E723 /* AuthViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12790D0601FE667A7FABFCB1 /* AuthViewInput.swift */; };
+		3071CF549F05633BF790FAFD /* AuthModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E0253C41CB556A2C2983D2 /* AuthModuleConfigurator.swift */; };
+		3430E4FD7D22DF2903CD63FC /* AuthViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD27A0122AB445301371CFBD /* AuthViewController.storyboard */; };
 		3521C726307161A409C9647C /* Pods_JiraTimeTrackerDebug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F992C76FFF3F400F6A3D43D6 /* Pods_JiraTimeTrackerDebug.framework */; };
+		37B189EA642E6F6DB7A86BDA /* AuthPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F694CB6F23BE2D8AED6792 /* AuthPresenterTests.swift */; };
 		39373DEAC1B253B2107F5C82 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30B5D85B1DA1356CF11AB1CB /* LaunchScreen.xib */; };
 		3A469E6E735AD3CBFBE45870 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B591DEFD2BC486CE0F9DE4 /* Strings.swift */; };
+		4AA291F9EEB7319B3D1096E5 /* AuthModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E0253C41CB556A2C2983D2 /* AuthModuleConfigurator.swift */; };
 		4C859994DC2096F0D5604B42 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7EC20117E735D0AC88EED8 /* UIApplication.swift */; };
 		52A5AC1D24EB92F99022B5D5 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1B8D0B88AD7B67DBF88D33 /* MainRouter.swift */; };
+		582FB10EE65F0C6230D6A893 /* AuthViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA78287699EAF184E2959014 /* AuthViewOutput.swift */; };
 		5AC62B9DE724E9D4073EC408 /* UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CEE69EFB64F63AD4B650A5 /* UnitTests.swift */; };
 		630E231C569B7BD3DA8734D1 /* Pods_JiraTimeTrackerRelease.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25558A03949F5BDE48CC70E3 /* Pods_JiraTimeTrackerRelease.framework */; };
+		67AC8DA7B05B501A03DEE2A6 /* AuthViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12790D0601FE667A7FABFCB1 /* AuthViewInput.swift */; };
 		67B324101AE9DB8DC2EEDB2E /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2058748DD954BC862A932D /* XCTestCase.swift */; };
+		6E4AEBCD7E69D224C9AF0F8E /* AuthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2771DBDC76DD3FA27DD2A0C0 /* AuthPresenter.swift */; };
 		71E39667A071F6735D40A394 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976CE281AB174290E6C53D1C /* Fonts.swift */; };
 		769D7EDF0C29E30CCAD9FFAA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30B5D85B1DA1356CF11AB1CB /* LaunchScreen.xib */; };
 		7F0C1983B990A40EC16FA95F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99295062C664191DF43C1E40 /* Router.swift */; };
@@ -33,16 +42,26 @@
 		979AE2B83A01CB3284170BD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CED3D5F8F1D9E1F14B23F01 /* AppDelegate.swift */; };
 		9BACDCDF6AAFEA5BBFC30B07 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976CE281AB174290E6C53D1C /* Fonts.swift */; };
 		A1DB6FC4E27AA5F5D767F880 /* DeepLinkOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFECE88BAA140E3A1E59E8CB /* DeepLinkOption.swift */; };
+		AB1A186C50DB75B71EEAF8DF /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313E1ABC7AE335F7A0A15BA2 /* AuthViewController.swift */; };
+		ADD3FEFB2C74D31124CF8D08 /* AuthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2771DBDC76DD3FA27DD2A0C0 /* AuthPresenter.swift */; };
 		B5F51E1292D4E57507EFF17F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B18F9A4E18773000F271A72 /* Localizable.strings */; };
 		C732EE192D538800B139B05A /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9678E574F01E8F5764781C /* Assets.swift */; };
 		C874965F653DACF8BD244D1E /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9678E574F01E8F5764781C /* Assets.swift */; };
+		C9A29A0146191E52F291E12C /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313E1ABC7AE335F7A0A15BA2 /* AuthViewController.swift */; };
+		CACBB7CBB899797FBBA518AB /* AuthViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA78287699EAF184E2959014 /* AuthViewOutput.swift */; };
 		CBAFCB0D8509EB6271D8F609 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1B8D0B88AD7B67DBF88D33 /* MainRouter.swift */; };
 		CCFEF77F9E90859394772A36 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99295062C664191DF43C1E40 /* Router.swift */; };
+		D254937A355D3CDDF0503BE5 /* AuthModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A407C0CC1F8C081293BCD36 /* AuthModuleInput.swift */; };
+		D40C3FA9849224B62A519B33 /* AuthViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD27A0122AB445301371CFBD /* AuthViewController.storyboard */; };
+		D67BC20BE17D9E97CB7BA601 /* AuthModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA042CC345BA644509A811C9 /* AuthModuleOutput.swift */; };
 		DA99E42A495E8AB99AD763BD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9050649AA7131D999B6CE3AE /* Colors.swift */; };
 		E15A2200FEC7959CE6FA8CF1 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1347BE5081C315756CD443A /* Presentable.swift */; };
 		E1F5E43FFE97024BB3379641 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0A6E69B7DF7A56C6FA3563 /* Coordinator.swift */; };
+		EB2672743B731F27D5C1CF6F /* AuthModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA042CC345BA644509A811C9 /* AuthModuleOutput.swift */; };
+		EB70594F3EBDF31C274325EE /* AuthViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25553E43C92A661B7171A3AA /* AuthViewTests.swift */; };
 		F148E922C9694F4D8ECB9CF9 /* DeepLinkOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFECE88BAA140E3A1E59E8CB /* DeepLinkOption.swift */; };
 		F9768DB4D38E3080171DE110 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7EC20117E735D0AC88EED8 /* UIApplication.swift */; };
+		FB3D50E55F06DB2CE3D92EFC /* AuthModuleConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4D0540C270531FA5171222 /* AuthModuleConfiguratorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,40 +76,50 @@
 
 /* Begin PBXFileReference section */
 		0B18F9A4E18773000F271A72 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		0E44355221B93B2C2C2E3A27 /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
+		0E44355221B93B2C2C2E3A27 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		12790D0601FE667A7FABFCB1 /* AuthViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthViewInput.swift; sourceTree = "<group>"; };
 		19F0FD5E0A825381BD47D5D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		25553E43C92A661B7171A3AA /* AuthViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthViewTests.swift; sourceTree = "<group>"; };
 		25558A03949F5BDE48CC70E3 /* Pods_JiraTimeTrackerRelease.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JiraTimeTrackerRelease.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2771DBDC76DD3FA27DD2A0C0 /* AuthPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthPresenter.swift; sourceTree = "<group>"; };
 		2AAECCAAF2BDD0DE7BBCAD4B /* UnitTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BBC650093949B78908C4C32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2D632F8CCA66489DAFF05BB3 /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
 		2E0A6E69B7DF7A56C6FA3563 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		30B5D85B1DA1356CF11AB1CB /* LaunchScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
-		33BF864C137D0273F3023E6A /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
+		30F694CB6F23BE2D8AED6792 /* AuthPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthPresenterTests.swift; sourceTree = "<group>"; };
+		313E1ABC7AE335F7A0A15BA2 /* AuthViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		33BF864C137D0273F3023E6A /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		417E415457A20FC10E766116 /* LaunchingApplicationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchingApplicationService.swift; sourceTree = "<group>"; };
+		5A407C0CC1F8C081293BCD36 /* AuthModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthModuleInput.swift; sourceTree = "<group>"; };
 		5A9678E574F01E8F5764781C /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		5CED3D5F8F1D9E1F14B23F01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		60E0253C41CB556A2C2983D2 /* AuthModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthModuleConfigurator.swift; sourceTree = "<group>"; };
 		61475E25C7CA2A21965ED0C8 /* Pods-JiraTimeTrackerDebug.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiraTimeTrackerDebug.release.xcconfig"; path = "Target Support Files/Pods-JiraTimeTrackerDebug/Pods-JiraTimeTrackerDebug.release.xcconfig"; sourceTree = "<group>"; };
 		62B591DEFD2BC486CE0F9DE4 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		6404680037EC54118BCC8B45 /* Pods-JiraTimeTrackerDebug.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiraTimeTrackerDebug.debug.xcconfig"; path = "Target Support Files/Pods-JiraTimeTrackerDebug/Pods-JiraTimeTrackerDebug.debug.xcconfig"; sourceTree = "<group>"; };
-		6805BA5617C3F9912065DF08 /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
+		6805BA5617C3F9912065DF08 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		749B04D6B6173ABC541CFE5D /* JiraTimeTrackerDebug.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = JiraTimeTrackerDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		790050199FBDA2C43807FB6B /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
+		790050199FBDA2C43807FB6B /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		7C1B8D0B88AD7B67DBF88D33 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		7E5AD123B11DD9F5DA2DFBFC /* Pods-JiraTimeTrackerRelease.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiraTimeTrackerRelease.release.xcconfig"; path = "Target Support Files/Pods-JiraTimeTrackerRelease/Pods-JiraTimeTrackerRelease.release.xcconfig"; sourceTree = "<group>"; };
-		83A108A8F2115E760D3031F3 /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
-		8569D1711B1EB888AFB428CA /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
+		83A108A8F2115E760D3031F3 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		8569D1711B1EB888AFB428CA /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		879B9AF1B62888A2F399B874 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		89550BFA93A5F84D4B7B77EC /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
+		89550BFA93A5F84D4B7B77EC /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		9050649AA7131D999B6CE3AE /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		91CEE69EFB64F63AD4B650A5 /* UnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTests.swift; sourceTree = "<group>"; };
 		94EC6757DCB2C6E00A6C38E9 /* JiraTimeTrackerRelease.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = JiraTimeTrackerRelease.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		976CE281AB174290E6C53D1C /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		99295062C664191DF43C1E40 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		9C4D0540C270531FA5171222 /* AuthModuleConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthModuleConfiguratorTests.swift; sourceTree = "<group>"; };
 		A8BB281A5F272569B427E548 /* Pods-JiraTimeTrackerRelease.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiraTimeTrackerRelease.debug.xcconfig"; path = "Target Support Files/Pods-JiraTimeTrackerRelease/Pods-JiraTimeTrackerRelease.debug.xcconfig"; sourceTree = "<group>"; };
+		AA042CC345BA644509A811C9 /* AuthModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthModuleOutput.swift; sourceTree = "<group>"; };
 		B57AFA752F885C9290E8B938 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		BA78287699EAF184E2959014 /* AuthViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthViewOutput.swift; sourceTree = "<group>"; };
 		BB7EC20117E735D0AC88EED8 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
-		C96792E20060DC4A9FC90167 /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
-		D7FB185F310A63334093D074 /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
+		C96792E20060DC4A9FC90167 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		D7FB185F310A63334093D074 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		DD27A0122AB445301371CFBD /* AuthViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = AuthViewController.storyboard; sourceTree = "<group>"; };
 		DFECE88BAA140E3A1E59E8CB /* DeepLinkOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkOption.swift; sourceTree = "<group>"; };
 		F1347BE5081C315756CD443A /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
 		F1C8527BE873990D30354835 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -133,8 +162,26 @@
 				A8BB281A5F272569B427E548 /* Pods-JiraTimeTrackerRelease.debug.xcconfig */,
 				7E5AD123B11DD9F5DA2DFBFC /* Pods-JiraTimeTrackerRelease.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		08EA9C11E4D4A39387E09D10 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				49840BD31C09EEEA2D422426 /* Auth */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		0BBE2E182D004FC1B2BCBA96 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				313E1ABC7AE335F7A0A15BA2 /* AuthViewController.swift */,
+				DD27A0122AB445301371CFBD /* AuthViewController.storyboard */,
+				12790D0601FE667A7FABFCB1 /* AuthViewInput.swift */,
+				BA78287699EAF184E2959014 /* AuthViewOutput.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		175C8517F8BE5FC90D03C5A6 /* Base Classes */ = {
@@ -163,6 +210,7 @@
 				FE2058748DD954BC862A932D /* XCTestCase.swift */,
 				EE9B867F58A26B3E7F1C0D30 /* Resources */,
 				FF08D37DD2F08F9BFF43049B /* Tests */,
+				08EA9C11E4D4A39387E09D10 /* Flows */,
 			);
 			path = UnitTests;
 			sourceTree = "<group>";
@@ -204,6 +252,14 @@
 				AE0B5FFABB2B9268F754DB6B /* Third Party */,
 			);
 			path = JiraTimeTracker;
+			sourceTree = "<group>";
+		};
+		49840BD31C09EEEA2D422426 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				81C871C5D73FA7AB2CE1D408 /* Auth */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		4BE54D67FFE98A4012BA2189 /* Release */ = {
@@ -251,12 +307,30 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
+		5C5AD519BC5769797895FEBE /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				9C4D0540C270531FA5171222 /* AuthModuleConfiguratorTests.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
 		5CFE390098521295299A66E6 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				790050199FBDA2C43807FB6B /* .gitkeep */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		81C871C5D73FA7AB2CE1D408 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				5C5AD519BC5769797895FEBE /* Configurator */,
+				8EA8852B41404B30803F1572 /* Presenter */,
+				F792160874AE743A30ABEC62 /* View */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		8702ECA6F3EDA661BFB49B3A /* Reusable Layer */ = {
@@ -275,12 +349,28 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		8EA8852B41404B30803F1572 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				30F694CB6F23BE2D8AED6792 /* AuthPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		9772769E3CB9345B60B1C9A8 /* Entry */ = {
 			isa = PBXGroup;
 			children = (
 				83A108A8F2115E760D3031F3 /* .gitkeep */,
 			);
 			path = Entry;
+			sourceTree = "<group>";
+		};
+		9E98E142F8D8CC7F59075204 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				60E0253C41CB556A2C2983D2 /* AuthModuleConfigurator.swift */,
+			);
+			path = Configurator;
 			sourceTree = "<group>";
 		};
 		A3299C31EBE6A34F1E88E83A = {
@@ -353,10 +443,20 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		CC967438C50195064484BCD0 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				9E98E142F8D8CC7F59075204 /* Configurator */,
+				FDF12FF21CDBCA2E098B8503 /* Presenter */,
+				0BBE2E182D004FC1B2BCBA96 /* View */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		CEC1A7F86DDF2105FA51C3EC /* Flows */ = {
 			isa = PBXGroup;
 			children = (
-				2D632F8CCA66489DAFF05BB3 /* .gitkeep */,
+				F861D1157FBC30CCCF267642 /* Auth */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -418,6 +518,32 @@
 				3B380778817F85D66CE761F7 /* Services */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		F792160874AE743A30ABEC62 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				25553E43C92A661B7171A3AA /* AuthViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F861D1157FBC30CCCF267642 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				CC967438C50195064484BCD0 /* Auth */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		FDF12FF21CDBCA2E098B8503 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2771DBDC76DD3FA27DD2A0C0 /* AuthPresenter.swift */,
+				5A407C0CC1F8C081293BCD36 /* AuthModuleInput.swift */,
+				AA042CC345BA644509A811C9 /* AuthModuleOutput.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		FF08D37DD2F08F9BFF43049B /* Tests */ = {
@@ -497,8 +623,6 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1131;
-				TargetAttributes = {
-				};
 			};
 			buildConfigurationList = 3ADCD94A4EE82B8AD4E3BC41 /* Build configuration list for PBXProject "JiraTimeTracker" */;
 			compatibilityVersion = "Xcode 10.0";
@@ -527,6 +651,7 @@
 				0C7720C4965B1FC708CD7129 /* Assets.xcassets in Resources */,
 				39373DEAC1B253B2107F5C82 /* LaunchScreen.xib in Resources */,
 				1A5DCB83A565855FF0946A27 /* Localizable.strings in Resources */,
+				D40C3FA9849224B62A519B33 /* AuthViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,6 +662,7 @@
 				028A509F63D8C48934F538B7 /* Assets.xcassets in Resources */,
 				769D7EDF0C29E30CCAD9FFAA /* LaunchScreen.xib in Resources */,
 				B5F51E1292D4E57507EFF17F /* Localizable.strings in Resources */,
+				3430E4FD7D22DF2903CD63FC /* AuthViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -713,6 +839,13 @@
 				7F0C1983B990A40EC16FA95F /* Router.swift in Sources */,
 				07F2246E5C21E7E6B760AB71 /* Strings.swift in Sources */,
 				F9768DB4D38E3080171DE110 /* UIApplication.swift in Sources */,
+				4AA291F9EEB7319B3D1096E5 /* AuthModuleConfigurator.swift in Sources */,
+				ADD3FEFB2C74D31124CF8D08 /* AuthPresenter.swift in Sources */,
+				D254937A355D3CDDF0503BE5 /* AuthModuleInput.swift in Sources */,
+				D67BC20BE17D9E97CB7BA601 /* AuthModuleOutput.swift in Sources */,
+				AB1A186C50DB75B71EEAF8DF /* AuthViewController.swift in Sources */,
+				2DA50EA97675FED94EA5E723 /* AuthViewInput.swift in Sources */,
+				582FB10EE65F0C6230D6A893 /* AuthViewOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -722,6 +855,9 @@
 			files = (
 				5AC62B9DE724E9D4073EC408 /* UnitTests.swift in Sources */,
 				67B324101AE9DB8DC2EEDB2E /* XCTestCase.swift in Sources */,
+				FB3D50E55F06DB2CE3D92EFC /* AuthModuleConfiguratorTests.swift in Sources */,
+				37B189EA642E6F6DB7A86BDA /* AuthPresenterTests.swift in Sources */,
+				EB70594F3EBDF31C274325EE /* AuthViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -742,6 +878,13 @@
 				CCFEF77F9E90859394772A36 /* Router.swift in Sources */,
 				3A469E6E735AD3CBFBE45870 /* Strings.swift in Sources */,
 				4C859994DC2096F0D5604B42 /* UIApplication.swift in Sources */,
+				3071CF549F05633BF790FAFD /* AuthModuleConfigurator.swift in Sources */,
+				6E4AEBCD7E69D224C9AF0F8E /* AuthPresenter.swift in Sources */,
+				24ABBF6A17F3942934AE7519 /* AuthModuleInput.swift in Sources */,
+				EB2672743B731F27D5C1CF6F /* AuthModuleOutput.swift in Sources */,
+				C9A29A0146191E52F291E12C /* AuthViewController.swift in Sources */,
+				67AC8DA7B05B501A03DEE2A6 /* AuthViewInput.swift in Sources */,
+				CACBB7CBB899797FBBA518AB /* AuthViewOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
