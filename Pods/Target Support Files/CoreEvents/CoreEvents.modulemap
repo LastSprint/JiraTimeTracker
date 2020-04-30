@@ -1,6 +1,0 @@
-framework module CoreEvents {
-  umbrella header "CoreEvents-umbrella.h"
-
-  export *
-  module * { export * }
-}
