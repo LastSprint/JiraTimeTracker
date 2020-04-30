@@ -1,0 +1,27 @@
+xcassets:
+  - inputs: 
+      - JiraTimeTracker/Resources/Images/Assets.xcassets
+    outputs:
+      - templateName: swift4
+        output: JiraTimeTracker/Resources/Constants/Images.swift
+        params:
+          enumName: Styles
+          publicAccess: true
+
+fonts:
+  inputs:
+    - JiraTimeTracker/Resources/Fonts
+  outputs:
+    - templateName: swift4
+      output: JiraTimeTracker/Resources/Constants/Fonts.swift
+      params:
+        publicAccess: true
+
+strings:
+  inputs:
+    - JiraTimeTracker/Resources/Strings/Localizable.strings
+  outputs:
+    - templateName: structured-swift4
+      output: JiraTimeTracker/Resources/Constants/Strings.swift
+      params:
+        publicAccess: true
