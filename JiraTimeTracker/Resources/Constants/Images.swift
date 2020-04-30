@@ -18,6 +18,7 @@
 
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 public enum Styles {
+  public static let logo = ImageAsset(name: "Logo")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 

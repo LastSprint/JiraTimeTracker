@@ -28,7 +28,6 @@
 		4C859994DC2096F0D5604B42 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7EC20117E735D0AC88EED8 /* UIApplication.swift */; };
 		52A5AC1D24EB92F99022B5D5 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1B8D0B88AD7B67DBF88D33 /* MainRouter.swift */; };
 		582FB10EE65F0C6230D6A893 /* AuthViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA78287699EAF184E2959014 /* AuthViewOutput.swift */; };
-		5AC62B9DE724E9D4073EC408 /* UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CEE69EFB64F63AD4B650A5 /* UnitTests.swift */; };
 		630E231C569B7BD3DA8734D1 /* Pods_JiraTimeTrackerRelease.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25558A03949F5BDE48CC70E3 /* Pods_JiraTimeTrackerRelease.framework */; };
 		67AC8DA7B05B501A03DEE2A6 /* AuthViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12790D0601FE667A7FABFCB1 /* AuthViewInput.swift */; };
 		67B324101AE9DB8DC2EEDB2E /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2058748DD954BC862A932D /* XCTestCase.swift */; };
@@ -107,7 +106,6 @@
 		879B9AF1B62888A2F399B874 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		89550BFA93A5F84D4B7B77EC /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		9050649AA7131D999B6CE3AE /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		91CEE69EFB64F63AD4B650A5 /* UnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTests.swift; sourceTree = "<group>"; };
 		94EC6757DCB2C6E00A6C38E9 /* JiraTimeTrackerRelease.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = JiraTimeTrackerRelease.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		976CE281AB174290E6C53D1C /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		99295062C664191DF43C1E40 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -206,7 +204,6 @@
 			isa = PBXGroup;
 			children = (
 				879B9AF1B62888A2F399B874 /* Info.plist */,
-				91CEE69EFB64F63AD4B650A5 /* UnitTests.swift */,
 				FE2058748DD954BC862A932D /* XCTestCase.swift */,
 				EE9B867F58A26B3E7F1C0D30 /* Resources */,
 				FF08D37DD2F08F9BFF43049B /* Tests */,
@@ -853,7 +850,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AC62B9DE724E9D4073EC408 /* UnitTests.swift in Sources */,
 				67B324101AE9DB8DC2EEDB2E /* XCTestCase.swift in Sources */,
 				FB3D50E55F06DB2CE3D92EFC /* AuthModuleConfiguratorTests.swift in Sources */,
 				37B189EA642E6F6DB7A86BDA /* AuthPresenterTests.swift in Sources */,
