@@ -1,0 +1,750 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		048FDEE788B98F0DC9E5D2A1 /* Pods_JiraTimeTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009C2E245B505B470ABF6F9A /* Pods_JiraTimeTracker.framework */; };
+		93F432516D471E514BDCC241 /* Pods_JiraTimeTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FEC46D2AF7CF8F0DCB9184 /* Pods_JiraTimeTrackerTests.framework */; };
+		B9464454245B20B8001917FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9464453245B20B8001917FB /* AppDelegate.swift */; };
+		B9464456245B20B8001917FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9464455245B20B8001917FB /* SceneDelegate.swift */; };
+		B9464458245B20B8001917FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9464457245B20B8001917FB /* ViewController.swift */; };
+		B946445B245B20B8001917FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9464459245B20B8001917FB /* Main.storyboard */; };
+		B946445D245B20BB001917FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B946445C245B20BB001917FB /* Assets.xcassets */; };
+		B9464460245B20BB001917FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B946445E245B20BB001917FB /* LaunchScreen.storyboard */; };
+		B946446B245B20BB001917FB /* JiraTimeTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B946446A245B20BB001917FB /* JiraTimeTrackerTests.swift */; };
+		B9464476245B20BB001917FB /* JiraTimeTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9464475245B20BB001917FB /* JiraTimeTrackerUITests.swift */; };
+		ED73D16172B4842D1F66610A /* Pods_JiraTimeTracker_JiraTimeTrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B8E6C2AC872C446CCF42A24 /* Pods_JiraTimeTracker_JiraTimeTrackerUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B9464467245B20BB001917FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9464448245B20B8001917FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B946444F245B20B8001917FB;
+			remoteInfo = JiraTimeTracker;
+		};
+		B9464472245B20BB001917FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9464448245B20B8001917FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B946444F245B20B8001917FB;
+			remoteInfo = JiraTimeTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		009C2E245B505B470ABF6F9A /* Pods_JiraTimeTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JiraTimeTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B8E6C2AC872C446CCF42A24 /* Pods_JiraTimeTracker_JiraTimeTrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JiraTimeTracker_JiraTimeTrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55FEC46D2AF7CF8F0DCB9184 /* Pods_JiraTimeTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JiraTimeTrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ADE6066DF0E64B37298E79E /* Pods-JiraTimeTracker-JiraTimeTrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiraTimeTracker-JiraTimeTrackerUITests.debug.xcconfig"; path = "Target Support Files/Pods-JiraTimeTracker-JiraTimeTrackerUITests/Pods-JiraTimeTracker-JiraTimeTrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		948ED91B41CF689AAE444056 /* Pods-JiraTimeTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiraTimeTracker.debug.xcconfig"; path = "Target Support Files/Pods-JiraTimeTracker/Pods-JiraTimeTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		973B3FC2EDEB7D42578C50BE /* Pods-JiraTimeTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiraTimeTrackerTests.debug.xcconfig"; path = "Target Support Files/Pods-JiraTimeTrackerTests/Pods-JiraTimeTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A4E2F4F551B8D0CFBE51151A /* Pods-JiraTimeTrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiraTimeTrackerTests.release.xcconfig"; path = "Target Support Files/Pods-JiraTimeTrackerTests/Pods-JiraTimeTrackerTests.release.xcconfig"; sourceTree = "<group>"; };
+		A4E76AA2FCB748B433406E21 /* Pods-JiraTimeTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiraTimeTracker.release.xcconfig"; path = "Target Support Files/Pods-JiraTimeTracker/Pods-JiraTimeTracker.release.xcconfig"; sourceTree = "<group>"; };
+		B9464450245B20B8001917FB /* JiraTimeTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JiraTimeTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9464453245B20B8001917FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B9464455245B20B8001917FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B9464457245B20B8001917FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B946445A245B20B8001917FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B946445C245B20BB001917FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B946445F245B20BB001917FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B9464461245B20BB001917FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9464466245B20BB001917FB /* JiraTimeTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JiraTimeTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B946446A245B20BB001917FB /* JiraTimeTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiraTimeTrackerTests.swift; sourceTree = "<group>"; };
+		B946446C245B20BB001917FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9464471245B20BB001917FB /* JiraTimeTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JiraTimeTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9464475245B20BB001917FB /* JiraTimeTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiraTimeTrackerUITests.swift; sourceTree = "<group>"; };
+		B9464477245B20BB001917FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D70342DA4BDB3528FCFD3D77 /* Pods-JiraTimeTracker-JiraTimeTrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiraTimeTracker-JiraTimeTrackerUITests.release.xcconfig"; path = "Target Support Files/Pods-JiraTimeTracker-JiraTimeTrackerUITests/Pods-JiraTimeTracker-JiraTimeTrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B946444D245B20B8001917FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				048FDEE788B98F0DC9E5D2A1 /* Pods_JiraTimeTracker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9464463245B20BB001917FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93F432516D471E514BDCC241 /* Pods_JiraTimeTrackerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B946446E245B20BB001917FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED73D16172B4842D1F66610A /* Pods_JiraTimeTracker_JiraTimeTrackerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30CE28F156E9C2EF1C232F40 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				948ED91B41CF689AAE444056 /* Pods-JiraTimeTracker.debug.xcconfig */,
+				A4E76AA2FCB748B433406E21 /* Pods-JiraTimeTracker.release.xcconfig */,
+				7ADE6066DF0E64B37298E79E /* Pods-JiraTimeTracker-JiraTimeTrackerUITests.debug.xcconfig */,
+				D70342DA4BDB3528FCFD3D77 /* Pods-JiraTimeTracker-JiraTimeTrackerUITests.release.xcconfig */,
+				973B3FC2EDEB7D42578C50BE /* Pods-JiraTimeTrackerTests.debug.xcconfig */,
+				A4E2F4F551B8D0CFBE51151A /* Pods-JiraTimeTrackerTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4DC9C41DE87C1D95D4C921AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				009C2E245B505B470ABF6F9A /* Pods_JiraTimeTracker.framework */,
+				4B8E6C2AC872C446CCF42A24 /* Pods_JiraTimeTracker_JiraTimeTrackerUITests.framework */,
+				55FEC46D2AF7CF8F0DCB9184 /* Pods_JiraTimeTrackerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9464447245B20B8001917FB = {
+			isa = PBXGroup;
+			children = (
+				B9464452245B20B8001917FB /* JiraTimeTracker */,
+				B9464469245B20BB001917FB /* JiraTimeTrackerTests */,
+				B9464474245B20BB001917FB /* JiraTimeTrackerUITests */,
+				B9464451245B20B8001917FB /* Products */,
+				30CE28F156E9C2EF1C232F40 /* Pods */,
+				4DC9C41DE87C1D95D4C921AD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B9464451245B20B8001917FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9464450245B20B8001917FB /* JiraTimeTracker.app */,
+				B9464466245B20BB001917FB /* JiraTimeTrackerTests.xctest */,
+				B9464471245B20BB001917FB /* JiraTimeTrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9464452245B20B8001917FB /* JiraTimeTracker */ = {
+			isa = PBXGroup;
+			children = (
+				B9464453245B20B8001917FB /* AppDelegate.swift */,
+				B9464455245B20B8001917FB /* SceneDelegate.swift */,
+				B9464457245B20B8001917FB /* ViewController.swift */,
+				B9464459245B20B8001917FB /* Main.storyboard */,
+				B946445C245B20BB001917FB /* Assets.xcassets */,
+				B946445E245B20BB001917FB /* LaunchScreen.storyboard */,
+				B9464461245B20BB001917FB /* Info.plist */,
+			);
+			path = JiraTimeTracker;
+			sourceTree = "<group>";
+		};
+		B9464469245B20BB001917FB /* JiraTimeTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				B946446A245B20BB001917FB /* JiraTimeTrackerTests.swift */,
+				B946446C245B20BB001917FB /* Info.plist */,
+			);
+			path = JiraTimeTrackerTests;
+			sourceTree = "<group>";
+		};
+		B9464474245B20BB001917FB /* JiraTimeTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B9464475245B20BB001917FB /* JiraTimeTrackerUITests.swift */,
+				B9464477245B20BB001917FB /* Info.plist */,
+			);
+			path = JiraTimeTrackerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B946444F245B20B8001917FB /* JiraTimeTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B946447A245B20BB001917FB /* Build configuration list for PBXNativeTarget "JiraTimeTracker" */;
+			buildPhases = (
+				50627CB25A54A845A9C32DAA /* [CP] Check Pods Manifest.lock */,
+				B946444C245B20B8001917FB /* Sources */,
+				B946444D245B20B8001917FB /* Frameworks */,
+				B946444E245B20B8001917FB /* Resources */,
+				867A9573E806EE9AB0E97828 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JiraTimeTracker;
+			productName = JiraTimeTracker;
+			productReference = B9464450245B20B8001917FB /* JiraTimeTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B9464465245B20BB001917FB /* JiraTimeTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B946447D245B20BB001917FB /* Build configuration list for PBXNativeTarget "JiraTimeTrackerTests" */;
+			buildPhases = (
+				78103B6059D24B6DD3A2C9E4 /* [CP] Check Pods Manifest.lock */,
+				B9464462245B20BB001917FB /* Sources */,
+				B9464463245B20BB001917FB /* Frameworks */,
+				B9464464245B20BB001917FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9464468245B20BB001917FB /* PBXTargetDependency */,
+			);
+			name = JiraTimeTrackerTests;
+			productName = JiraTimeTrackerTests;
+			productReference = B9464466245B20BB001917FB /* JiraTimeTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B9464470245B20BB001917FB /* JiraTimeTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9464480245B20BB001917FB /* Build configuration list for PBXNativeTarget "JiraTimeTrackerUITests" */;
+			buildPhases = (
+				9E0A5D98E6B5D4144434E32B /* [CP] Check Pods Manifest.lock */,
+				B946446D245B20BB001917FB /* Sources */,
+				B946446E245B20BB001917FB /* Frameworks */,
+				B946446F245B20BB001917FB /* Resources */,
+				561E9B48349C3286CFE3984C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9464473245B20BB001917FB /* PBXTargetDependency */,
+			);
+			name = JiraTimeTrackerUITests;
+			productName = JiraTimeTrackerUITests;
+			productReference = B9464471245B20BB001917FB /* JiraTimeTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9464448245B20B8001917FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = LastSprint;
+				TargetAttributes = {
+					B946444F245B20B8001917FB = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					B9464465245B20BB001917FB = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = B946444F245B20B8001917FB;
+					};
+					B9464470245B20BB001917FB = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = B946444F245B20B8001917FB;
+					};
+				};
+			};
+			buildConfigurationList = B946444B245B20B8001917FB /* Build configuration list for PBXProject "JiraTimeTracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B9464447245B20B8001917FB;
+			productRefGroup = B9464451245B20B8001917FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B946444F245B20B8001917FB /* JiraTimeTracker */,
+				B9464465245B20BB001917FB /* JiraTimeTrackerTests */,
+				B9464470245B20BB001917FB /* JiraTimeTrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B946444E245B20B8001917FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9464460245B20BB001917FB /* LaunchScreen.storyboard in Resources */,
+				B946445D245B20BB001917FB /* Assets.xcassets in Resources */,
+				B946445B245B20B8001917FB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9464464245B20BB001917FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B946446F245B20BB001917FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50627CB25A54A845A9C32DAA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JiraTimeTracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		561E9B48349C3286CFE3984C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JiraTimeTracker-JiraTimeTrackerUITests/Pods-JiraTimeTracker-JiraTimeTrackerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JiraTimeTracker-JiraTimeTrackerUITests/Pods-JiraTimeTracker-JiraTimeTrackerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JiraTimeTracker-JiraTimeTrackerUITests/Pods-JiraTimeTracker-JiraTimeTrackerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78103B6059D24B6DD3A2C9E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JiraTimeTrackerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		867A9573E806EE9AB0E97828 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JiraTimeTracker/Pods-JiraTimeTracker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JiraTimeTracker/Pods-JiraTimeTracker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JiraTimeTracker/Pods-JiraTimeTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E0A5D98E6B5D4144434E32B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JiraTimeTracker-JiraTimeTrackerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B946444C245B20B8001917FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9464458245B20B8001917FB /* ViewController.swift in Sources */,
+				B9464454245B20B8001917FB /* AppDelegate.swift in Sources */,
+				B9464456245B20B8001917FB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9464462245B20BB001917FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B946446B245B20BB001917FB /* JiraTimeTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B946446D245B20BB001917FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9464476245B20BB001917FB /* JiraTimeTrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B9464468245B20BB001917FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B946444F245B20B8001917FB /* JiraTimeTracker */;
+			targetProxy = B9464467245B20BB001917FB /* PBXContainerItemProxy */;
+		};
+		B9464473245B20BB001917FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B946444F245B20B8001917FB /* JiraTimeTracker */;
+			targetProxy = B9464472245B20BB001917FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B9464459245B20B8001917FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B946445A245B20B8001917FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B946445E245B20BB001917FB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B946445F245B20BB001917FB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B9464478245B20BB001917FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B9464479245B20BB001917FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B946447B245B20BB001917FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 948ED91B41CF689AAE444056 /* Pods-JiraTimeTracker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZJ45BEVK69;
+				INFOPLIST_FILE = JiraTimeTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.lastsprint.JiraTimeTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B946447C245B20BB001917FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4E76AA2FCB748B433406E21 /* Pods-JiraTimeTracker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZJ45BEVK69;
+				INFOPLIST_FILE = JiraTimeTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.lastsprint.JiraTimeTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B946447E245B20BB001917FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 973B3FC2EDEB7D42578C50BE /* Pods-JiraTimeTrackerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZJ45BEVK69;
+				INFOPLIST_FILE = JiraTimeTrackerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.lastsprint.JiraTimeTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JiraTimeTracker.app/JiraTimeTracker";
+			};
+			name = Debug;
+		};
+		B946447F245B20BB001917FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4E2F4F551B8D0CFBE51151A /* Pods-JiraTimeTrackerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZJ45BEVK69;
+				INFOPLIST_FILE = JiraTimeTrackerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.lastsprint.JiraTimeTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JiraTimeTracker.app/JiraTimeTracker";
+			};
+			name = Release;
+		};
+		B9464481245B20BB001917FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ADE6066DF0E64B37298E79E /* Pods-JiraTimeTracker-JiraTimeTrackerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZJ45BEVK69;
+				INFOPLIST_FILE = JiraTimeTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.lastsprint.JiraTimeTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JiraTimeTracker;
+			};
+			name = Debug;
+		};
+		B9464482245B20BB001917FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D70342DA4BDB3528FCFD3D77 /* Pods-JiraTimeTracker-JiraTimeTrackerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZJ45BEVK69;
+				INFOPLIST_FILE = JiraTimeTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.lastsprint.JiraTimeTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JiraTimeTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B946444B245B20B8001917FB /* Build configuration list for PBXProject "JiraTimeTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9464478245B20BB001917FB /* Debug */,
+				B9464479245B20BB001917FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B946447A245B20BB001917FB /* Build configuration list for PBXNativeTarget "JiraTimeTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B946447B245B20BB001917FB /* Debug */,
+				B946447C245B20BB001917FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B946447D245B20BB001917FB /* Build configuration list for PBXNativeTarget "JiraTimeTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B946447E245B20BB001917FB /* Debug */,
+				B946447F245B20BB001917FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9464480245B20BB001917FB /* Build configuration list for PBXNativeTarget "JiraTimeTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9464481245B20BB001917FB /* Debug */,
+				B9464482245B20BB001917FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B9464448245B20B8001917FB /* Project object */;
+}

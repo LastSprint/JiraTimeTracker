@@ -1,0 +1,113 @@
+PODS:
+  - Alamofire (5.0.0-beta.4)
+  - CoreEvents (2.0.1)
+  - CryptoSwift (1.3.1)
+  - InputMask (4.0.2)
+  - NodeKit (3.2.0):
+    - NodeKit/Core (= 3.2.0)
+  - NodeKit/Core (3.2.0):
+    - Alamofire (= 5.0.0-beta.4)
+    - CoreEvents (~> 2.0.1)
+  - Pecker (0.2.0)
+  - PluggableApplicationDelegate (0.3.0)
+  - ReactiveDataDisplayManager (5.0.1)
+  - SFOTPTextField (1.0.0)
+  - SurfUtils/CommonButton (10.0.5)
+  - SurfUtils/KeyboardPresentable (10.0.5)
+  - SurfUtils/SkeletonView (10.0.5)
+  - SurfUtils/StringAttributes (10.0.5)
+  - SurfUtils/UIStyle (10.0.5)
+  - SurfUtils/VibrationFeedbackManager (10.0.5)
+  - SurfUtils/XibView (10.0.5)
+  - SwiftGen (6.1.0)
+  - SwiftLint (0.30.1)
+  - SwiftMessages (7.0.1):
+    - SwiftMessages/App (= 7.0.1)
+  - SwiftMessages/App (7.0.1)
+  - TextFieldsCatalog (0.9.1):
+    - InputMask (= 4.0.2)
+
+DEPENDENCIES:
+  - CryptoSwift (from `https://github.com/krzyzanowskim/CryptoSwift`, tag `1.3.1`)
+  - NodeKit (from `https://github.com/surfstudio/NodeKit.git`, tag `3.2.0`)
+  - Pecker
+  - PluggableApplicationDelegate (from `https://github.com/surfstudio/PluggableApplicationDelegate.git`, commit `b24aabe3f34d51072cee5cac3b576dbb1f4ca9ec`)
+  - ReactiveDataDisplayManager (from `https://github.com/surfstudio/ReactiveDataDisplayManager`, tag `5.0.1`)
+  - SFOTPTextField (~> 1.0.0)
+  - SurfUtils/CommonButton (from `https://github.com/surfstudio/iOS-Utils.git`, tag `10.0.5`)
+  - SurfUtils/KeyboardPresentable (from `https://github.com/surfstudio/iOS-Utils.git`, tag `10.0.5`)
+  - SurfUtils/SkeletonView (from `https://github.com/surfstudio/iOS-Utils.git`, tag `10.0.5`)
+  - SurfUtils/StringAttributes (from `https://github.com/surfstudio/iOS-Utils.git`, tag `10.0.5`)
+  - SurfUtils/UIStyle (from `https://github.com/surfstudio/iOS-Utils.git`, tag `10.0.5`)
+  - SurfUtils/VibrationFeedbackManager (from `https://github.com/surfstudio/iOS-Utils.git`, tag `10.0.5`)
+  - SurfUtils/XibView (from `https://github.com/surfstudio/iOS-Utils.git`, tag `10.0.5`)
+  - SwiftGen (~> 6.1.0)
+  - SwiftLint (~> 0.30.1)
+  - SwiftMessages (~> 7.0.1)
+  - TextFieldsCatalog (~> 0.9.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CoreEvents
+    - InputMask
+    - Pecker
+    - SFOTPTextField
+    - SwiftGen
+    - SwiftLint
+    - SwiftMessages
+    - TextFieldsCatalog
+
+EXTERNAL SOURCES:
+  CryptoSwift:
+    :git: https://github.com/krzyzanowskim/CryptoSwift
+    :tag: 1.3.1
+  NodeKit:
+    :git: https://github.com/surfstudio/NodeKit.git
+    :tag: 3.2.0
+  PluggableApplicationDelegate:
+    :commit: b24aabe3f34d51072cee5cac3b576dbb1f4ca9ec
+    :git: https://github.com/surfstudio/PluggableApplicationDelegate.git
+  ReactiveDataDisplayManager:
+    :git: https://github.com/surfstudio/ReactiveDataDisplayManager
+    :tag: 5.0.1
+  SurfUtils:
+    :git: https://github.com/surfstudio/iOS-Utils.git
+    :tag: 10.0.5
+
+CHECKOUT OPTIONS:
+  CryptoSwift:
+    :git: https://github.com/krzyzanowskim/CryptoSwift
+    :tag: 1.3.1
+  NodeKit:
+    :git: https://github.com/surfstudio/NodeKit.git
+    :tag: 3.2.0
+  PluggableApplicationDelegate:
+    :commit: b24aabe3f34d51072cee5cac3b576dbb1f4ca9ec
+    :git: https://github.com/surfstudio/PluggableApplicationDelegate.git
+  ReactiveDataDisplayManager:
+    :git: https://github.com/surfstudio/ReactiveDataDisplayManager
+    :tag: 5.0.1
+  SurfUtils:
+    :git: https://github.com/surfstudio/iOS-Utils.git
+    :tag: 10.0.5
+
+SPEC CHECKSUMS:
+  Alamofire: 6458d95477bc40adf10129f22c67cfb014162dc8
+  CoreEvents: ef9fb2d1bfe807e68a137ea2dae6988dcc9346fe
+  CryptoSwift: f12f037f6d0fcd6d48c96db0071b653de64e6c4d
+  InputMask: b9df7a44c044f59485b2d596661e6bd4334bddb4
+  NodeKit: 56a6aba0035a74c9e0fb6c50dd85c5da184d5ccb
+  Pecker: 57ffad2d41bc9985acf655c9b93e96e01560e267
+  PluggableApplicationDelegate: 245f6c90f0bd11c493b99250c75fcf213b808bce
+  ReactiveDataDisplayManager: 2e394d7baa86eb6399e36dc2c0bb637afaa311e0
+  SFOTPTextField: 74b62272366e49998ff4a3baa32534a0c9be6070
+  SurfUtils: 31a3bf546204f0051480c923a0fde978334eaa66
+  SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
+  SwiftLint: a54bf1fe12b55c68560eb2a7689dfc81458508f7
+  SwiftMessages: b577dc7043be8b299857ab35bb663dbff6483bd0
+  TextFieldsCatalog: a0e57101422e9bbbfcd4682cfb20cf2a203ebfcf
+
+PODFILE CHECKSUM: 8384232d82c913bed00e8b008c6a8b7a41642e49
+
+COCOAPODS: 1.8.4

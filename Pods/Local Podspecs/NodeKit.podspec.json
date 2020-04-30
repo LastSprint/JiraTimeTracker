@@ -1,0 +1,56 @@
+{
+  "name": "NodeKit",
+  "version": "3.2.0",
+  "summary": "Framework for network interaction",
+  "homepage": "https://github.com/surfstudio/NodeKit",
+  "license": "MIT",
+  "authors": {
+    "Alexander Kravchenkov": "sprintend@gmail.com"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source": {
+    "git": "https://github.com/surfstudio/NodeKit.git",
+    "tag": "3.2.0"
+  },
+  "default_subspecs": "Core",
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": [
+        "NodeKit/Utils/**/*.swift",
+        "NodeKit/Chains/**/*.swift",
+        "NodeKit/Layers/**/*.swift",
+        "NodeKit/Core/**/*.swift",
+        "NodeKit/Encodings/*.swift"
+      ],
+      "dependencies": {
+        "Alamofire": [
+          "5.0.0-beta.4"
+        ],
+        "CoreEvents": [
+          "~> 2.0.1"
+        ]
+      }
+    },
+    {
+      "name": "MockerIntegration",
+      "dependencies": {
+        "NodeKit/Core": [
+
+        ]
+      },
+      "source_files": "NodeKit/MockerIntegration/*.swift"
+    },
+    {
+      "name": "UrlCache",
+      "dependencies": {
+        "NodeKit/Core": [
+
+        ]
+      },
+      "source_files": "NodeKit/CacheNode/**/*.swift"
+    }
+  ]
+}
