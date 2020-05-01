@@ -3,6 +3,8 @@
 //  JiraTimeTracker
 //
 
+import Foundation
+
 final class AuthPresenter: AuthViewOutput, AuthModuleInput, AuthModuleOutput {
 
     // MARK: - AuthModuleOutput
@@ -14,9 +16,11 @@ final class AuthPresenter: AuthViewOutput, AuthModuleInput, AuthModuleOutput {
     // MARK: - AuthViewOutput
 
     func viewLoaded() {
-        view?.setupInitialState()
+
     }
 
     // MARK: - AuthModuleInput
+
+    
 
 }

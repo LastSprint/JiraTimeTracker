@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A29733DBFFE363E02D20643B"
-               BuildableName = "JiraTimeTrackerDebug.app"
-               BlueprintName = "JiraTimeTrackerDebug"
+               BuildableName = "JTrack.app"
+               BlueprintName = "Jtrack"
                ReferencedContainer = "container:JiraTimeTracker.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,8 +26,16 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      onlyGenerateCoverageForSpecifiedTargets = "NO"
       shouldUseLaunchSchemeArgsEnv = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "A29733DBFFE363E02D20643B"
+            BuildableName = "JTrack.app"
+            BlueprintName = "Jtrack"
+            ReferencedContainer = "container:JiraTimeTracker.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -40,17 +48,6 @@
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A29733DBFFE363E02D20643B"
-            BuildableName = "JiraTimeTrackerDebug.app"
-            BlueprintName = "JiraTimeTrackerDebug"
-            ReferencedContainer = "container:JiraTimeTracker.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
-      <CommandLineArguments>
-      </CommandLineArguments>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -67,13 +64,11 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A29733DBFFE363E02D20643B"
-            BuildableName = "JiraTimeTrackerDebug.app"
-            BlueprintName = "JiraTimeTrackerDebug"
+            BuildableName = "JTrack.app"
+            BlueprintName = "Jtrack"
             ReferencedContainer = "container:JiraTimeTracker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <CommandLineArguments>
-      </CommandLineArguments>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -86,13 +81,11 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A29733DBFFE363E02D20643B"
-            BuildableName = "JiraTimeTrackerDebug.app"
-            BlueprintName = "JiraTimeTrackerDebug"
+            BuildableName = "JTrack.app"
+            BlueprintName = "Jtrack"
             ReferencedContainer = "container:JiraTimeTracker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <CommandLineArguments>
-      </CommandLineArguments>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

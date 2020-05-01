@@ -18,7 +18,16 @@
 
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 public enum Styles {
-  public static let logo = ImageAsset(name: "Logo")
+  public enum Colors {
+
+    public static let main = ColorAsset(name: "Colors/main")
+    public static let mainBackground = ColorAsset(name: "Colors/mainBackground")
+  }
+  public enum Image {
+
+    public static let jiraLogo = ImageAsset(name: "image/jiraLogo")
+    public static let surfLogo = ImageAsset(name: "image/surfLogo")
+  }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 

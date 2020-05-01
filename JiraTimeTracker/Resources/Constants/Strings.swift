@@ -11,6 +11,25 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name
 public enum L10n {
+
+  public enum Auth {
+    public enum Button {
+      public enum SignIn {
+        /// Sign in
+        public static let title = L10n.tr("Localizable", "Auth.Button.SignIn.title")
+      }
+    }
+    public enum TextField {
+      public enum Login {
+        /// Login
+        public static let placeholder = L10n.tr("Localizable", "Auth.TextField.Login.placeholder")
+      }
+      public enum Password {
+        /// Password
+        public static let placeholder = L10n.tr("Localizable", "Auth.TextField.Password.placeholder")
+      }
+    }
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name

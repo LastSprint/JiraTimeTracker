@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,19 +12,69 @@
         <!--Auth View Controller-->
         <scene sceneID="PlN-iW-H7B">
             <objects>
-                <viewController id="h3k-bK-TNO" customClass="AuthViewController" customModule="JiraTimeTrackerDebug" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="h3k-bK-TNO" customClass="AuthViewController" customModule="JTrack" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cA6-JB-jfU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="kpK-ye-GoF">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image/jiraLogo" translatesAutoresizingMaskIntoConstraints="NO" id="kpK-ye-GoF">
                                 <rect key="frame" x="79" y="58" width="216" height="137"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCU-9o-E2e">
+                                <rect key="frame" x="68" y="553" width="239" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="IJF-tM-MXa"/>
+                                </constraints>
+                                <state key="normal" title="Sign In"/>
+                                <connections>
+                                    <action selector="actionSignInTouchUpInside:" destination="h3k-bK-TNO" eventType="touchUpInside" id="KLH-IE-EGP"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KHz-N3-ZDM">
+                                <rect key="frame" x="48" y="242.5" width="279" height="46"/>
+                                <color key="backgroundColor" name="Colors/main"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="lhe-Y6-1Of"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9QU-Ot-qM4">
+                                <rect key="frame" x="48" y="316.5" width="279" height="46"/>
+                                <color key="backgroundColor" name="Colors/main"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="T3C-zg-gZf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KHz-N3-ZDM" firstAttribute="centerY" secondItem="cA6-JB-jfU" secondAttribute="centerY" priority="250" constant="-68" id="6UZ-v0-mvq"/>
+                            <constraint firstItem="KHz-N3-ZDM" firstAttribute="top" relation="greaterThanOrEqual" secondItem="YWU-9O-L7t" secondAttribute="top" constant="28" id="HN1-ya-Dic"/>
+                            <constraint firstItem="KHz-N3-ZDM" firstAttribute="leading" secondItem="YWU-9O-L7t" secondAttribute="leading" constant="48" id="KCK-w3-1fB"/>
+                            <constraint firstItem="9QU-Ot-qM4" firstAttribute="leading" secondItem="YWU-9O-L7t" secondAttribute="leading" constant="48" id="P4u-Kp-FW9"/>
+                            <constraint firstItem="YWU-9O-L7t" firstAttribute="bottom" secondItem="NCU-9o-E2e" secondAttribute="bottom" constant="68" id="Rvb-m8-Szo"/>
+                            <constraint firstItem="NCU-9o-E2e" firstAttribute="leading" secondItem="YWU-9O-L7t" secondAttribute="leading" constant="68" id="a69-tz-Pns"/>
+                            <constraint firstItem="YWU-9O-L7t" firstAttribute="trailing" secondItem="KHz-N3-ZDM" secondAttribute="trailing" constant="48" id="bsm-Kg-K9w"/>
+                            <constraint firstItem="NCU-9o-E2e" firstAttribute="top" relation="greaterThanOrEqual" secondItem="9QU-Ot-qM4" secondAttribute="bottom" constant="28" id="cm8-9M-Nfs"/>
+                            <constraint firstItem="9QU-Ot-qM4" firstAttribute="top" secondItem="KHz-N3-ZDM" secondAttribute="bottom" constant="28" id="d0K-1N-dSC"/>
+                            <constraint firstItem="YWU-9O-L7t" firstAttribute="trailing" secondItem="9QU-Ot-qM4" secondAttribute="trailing" constant="48" id="eym-60-Ftj"/>
+                            <constraint firstItem="YWU-9O-L7t" firstAttribute="trailing" secondItem="NCU-9o-E2e" secondAttribute="trailing" constant="68" id="v0Y-37-a2T"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="YWU-9O-L7t"/>
                     </view>
+                    <connections>
+                        <outlet property="authButtonBottomCinstraint" destination="Rvb-m8-Szo" id="eez-dS-53f"/>
+                        <outlet property="loginField" destination="KHz-N3-ZDM" id="OPj-uG-cz8"/>
+                        <outlet property="logoImage" destination="kpK-ye-GoF" id="2xn-6H-tse"/>
+                        <outlet property="passwordField" destination="9QU-Ot-qM4" id="OGh-Xi-Fkj"/>
+                        <outlet property="signInButton" destination="NCU-9o-E2e" id="b9B-3D-9jv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="psv-Wb-mBc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -31,6 +82,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Logo" width="100" height="73"/>
+        <image name="image/jiraLogo" width="200" height="200"/>
+        <namedColor name="Colors/main">
+            <color red="0.12549019607843137" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

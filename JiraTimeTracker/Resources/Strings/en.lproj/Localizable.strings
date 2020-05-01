@@ -1,0 +1,5 @@
+// MARK: - Auth
+
+"Auth.TextField.Login.placeholder" = "Login";
+"Auth.TextField.Password.placeholder" = "Password";
+"Auth.Button.SignIn.title" = "Sign in";
