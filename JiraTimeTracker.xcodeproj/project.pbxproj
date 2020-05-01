@@ -695,9 +695,9 @@
 			productReference = 2AAECCAAF2BDD0DE7BBCAD4B /* UnitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A29733DBFFE363E02D20643B /* Jtrack */ = {
+		A29733DBFFE363E02D20643B /* JiraTimeTrackerDebug */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C8E3B60BE5484A00396CAA02 /* Build configuration list for PBXNativeTarget "Jtrack" */;
+			buildConfigurationList = C8E3B60BE5484A00396CAA02 /* Build configuration list for PBXNativeTarget "JiraTimeTrackerDebug" */;
 			buildPhases = (
 				EA5F992F7FA70145E6905B24 /* [CP] Check Pods Manifest.lock */,
 				55BABCD6D20123EA678557D0 /* SwiftGen */,
@@ -711,7 +711,7 @@
 			);
 			dependencies = (
 			);
-			name = Jtrack;
+			name = JiraTimeTrackerDebug;
 			productName = JiraTimeTrackerDebug;
 			productReference = 749B04D6B6173ABC541CFE5D /* JTrack.app */;
 			productType = "com.apple.product-type.application";
@@ -738,7 +738,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A29733DBFFE363E02D20643B /* Jtrack */,
+				A29733DBFFE363E02D20643B /* JiraTimeTrackerDebug */,
 				5376CAAFD038A39CCE99279C /* JiraTimeTrackerRelease */,
 				9B20B9BF96B420361D476206 /* UnitTests */,
 			);
@@ -1284,7 +1284,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		C8E3B60BE5484A00396CAA02 /* Build configuration list for PBXNativeTarget "Jtrack" */ = {
+		C8E3B60BE5484A00396CAA02 /* Build configuration list for PBXNativeTarget "JiraTimeTrackerDebug" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E84FEE531E5E20B6C3896CD7 /* Debug */,

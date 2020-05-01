@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A29733DBFFE363E02D20643B"
                BuildableName = "JTrack.app"
-               BlueprintName = "Jtrack"
+               BlueprintName = "JiraTimeTrackerDebug"
                ReferencedContainer = "container:JiraTimeTracker.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,7 +32,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A29733DBFFE363E02D20643B"
             BuildableName = "JTrack.app"
-            BlueprintName = "Jtrack"
+            BlueprintName = "JiraTimeTrackerDebug"
             ReferencedContainer = "container:JiraTimeTracker.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -65,7 +65,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A29733DBFFE363E02D20643B"
             BuildableName = "JTrack.app"
-            BlueprintName = "Jtrack"
+            BlueprintName = "JiraTimeTrackerDebug"
             ReferencedContainer = "container:JiraTimeTracker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -82,7 +82,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A29733DBFFE363E02D20643B"
             BuildableName = "JTrack.app"
-            BlueprintName = "Jtrack"
+            BlueprintName = "JiraTimeTrackerDebug"
             ReferencedContainer = "container:JiraTimeTracker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
