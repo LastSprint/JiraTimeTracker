@@ -69,7 +69,7 @@
                         <viewLayoutGuide key="safeArea" id="YWU-9O-L7t"/>
                     </view>
                     <connections>
-                        <outlet property="authButtonBottomCinstraint" destination="Rvb-m8-Szo" id="eez-dS-53f"/>
+                        <outlet property="authButtonBottomConstraint" destination="Rvb-m8-Szo" id="V5g-Wk-v6S"/>
                         <outlet property="loginField" destination="KHz-N3-ZDM" id="OPj-uG-cz8"/>
                         <outlet property="logoImage" destination="kpK-ye-GoF" id="2xn-6H-tse"/>
                         <outlet property="passwordField" destination="9QU-Ot-qM4" id="OGh-Xi-Fkj"/>

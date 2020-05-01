@@ -6,6 +6,10 @@ import PluggableApplicationDelegate
 
 final class LaunchingRootView: NSObject, ApplicationService {
 
+    // MARK: - Properties
+
+    private let appCoord = ApplicationCoordinator()
+
     // MARK: - ApplicationService
 
     func application(_ application: UIApplication,
@@ -19,11 +23,9 @@ private extension LaunchingRootView {
 
     func startFurstFlow() {
         let window = UIWindow()
-
-        window.rootViewController = AuthModuleConfigurator().configure().0
-
         self.window = window
-
+        window.rootViewController = UIViewController()
         window.makeKeyAndVisible()
+        self.appCoord.start()
     }
 }

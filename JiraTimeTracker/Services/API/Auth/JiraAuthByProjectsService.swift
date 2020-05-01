@@ -21,8 +21,9 @@ extension JiraAuthByProjectsService: JiraAuthService {
         let token = Data("\(login):\(password)".utf8).base64EncodedString()
 
         return self.builder
+            .route(.get, .projects)
             .set(query: ["recent": 5])
-            .set(metadata: ["Authorization": token])
+            .set(metadata: ["Authorization": "Basic \(token)"])
             .build()
             .process()
     }

@@ -62,6 +62,9 @@
 		B9FC6C8B245CA99B00F51B7A /* JiraProjectsNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FC6C8A245CA99B00F51B7A /* JiraProjectsNetworkService.swift */; };
 		B9FC6C8E245CAAD200F51B7A /* JiraAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FC6C8D245CAAD200F51B7A /* JiraAuthService.swift */; };
 		B9FC6C90245CAB1B00F51B7A /* JiraAuthByProjectsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FC6C8F245CAB1B00F51B7A /* JiraAuthByProjectsService.swift */; };
+		B9FC6C93245CB15900F51B7A /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FC6C92245CB15900F51B7A /* Closures.swift */; };
+		B9FC6C95245CC17700F51B7A /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FC6C94245CC17700F51B7A /* ApplicationCoordinator.swift */; };
+		B9FC6C97245CC1C300F51B7A /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FC6C96245CC1C300F51B7A /* AuthCoordinator.swift */; };
 		C732EE192D538800B139B05A /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9678E574F01E8F5764781C /* Assets.swift */; };
 		C874965F653DACF8BD244D1E /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9678E574F01E8F5764781C /* Assets.swift */; };
 		C9A29A0146191E52F291E12C /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313E1ABC7AE335F7A0A15BA2 /* AuthViewController.swift */; };
@@ -146,6 +149,9 @@
 		B9FC6C8A245CA99B00F51B7A /* JiraProjectsNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiraProjectsNetworkService.swift; sourceTree = "<group>"; };
 		B9FC6C8D245CAAD200F51B7A /* JiraAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiraAuthService.swift; sourceTree = "<group>"; };
 		B9FC6C8F245CAB1B00F51B7A /* JiraAuthByProjectsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiraAuthByProjectsService.swift; sourceTree = "<group>"; };
+		B9FC6C92245CB15900F51B7A /* Closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
+		B9FC6C94245CC17700F51B7A /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		B9FC6C96245CC1C300F51B7A /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
 		BA78287699EAF184E2959014 /* AuthViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthViewOutput.swift; sourceTree = "<group>"; };
 		BB7EC20117E735D0AC88EED8 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		C96792E20060DC4A9FC90167 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
@@ -360,6 +366,7 @@
 			isa = PBXGroup;
 			children = (
 				B9CAB5C3245C6019008C83C1 /* MessageBanner */,
+				B9FC6C92245CB15900F51B7A /* Closures.swift */,
 			);
 			path = "Reusable Layer";
 			sourceTree = "<group>";
@@ -607,6 +614,7 @@
 				30B5D85B1DA1356CF11AB1CB /* LaunchScreen.xib */,
 				F6EB656D3E589FFEB60EBAF7 /* Info */,
 				3B380778817F85D66CE761F7 /* Services */,
+				B9FC6C94245CC17700F51B7A /* ApplicationCoordinator.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -623,6 +631,7 @@
 			isa = PBXGroup;
 			children = (
 				CC967438C50195064484BCD0 /* Auth */,
+				B9FC6C96245CC1C300F51B7A /* AuthCoordinator.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -959,12 +968,14 @@
 				C874965F653DACF8BD244D1E /* Assets.swift in Sources */,
 				B9807469245B7D8D006DCC69 /* CommonTextFieldStyle.swift in Sources */,
 				86BEF918ED4220F49D3515B9 /* BaseCoordinator.swift in Sources */,
+				B9FC6C97245CC1C300F51B7A /* AuthCoordinator.swift in Sources */,
 				B9FC6C7D245CA3F500F51B7A /* ShortProjectEntry.swift in Sources */,
 				B9807463245B61A1006DCC69 /* UIStyle+TextFields.swift in Sources */,
 				2A774E6365BB17618FF761E9 /* Coordinator.swift in Sources */,
 				A1DB6FC4E27AA5F5D767F880 /* DeepLinkOption.swift in Sources */,
 				B9807465245B723A006DCC69 /* UIStyle+Buttons.swift in Sources */,
 				B9807461245B5F59006DCC69 /* CommonUnderlineTextFieldStyle.swift in Sources */,
+				B9FC6C95245CC17700F51B7A /* ApplicationCoordinator.swift in Sources */,
 				B9807467245B735F006DCC69 /* Colors.swift in Sources */,
 				B9CAB5C2245C5E30008C83C1 /* MessageBannerDisplaybale.swift in Sources */,
 				2D30C6DF51C0DEB8137A5EBB /* LaunchingApplicationService.swift in Sources */,
@@ -972,6 +983,7 @@
 				B9FC6C87245CA71F00F51B7A /* JiraProjectsRoutes.swift in Sources */,
 				B90C0E9B245B4B1B0021D4DE /* CGFloat.swift in Sources */,
 				B9FC6C83245CA64A00F51B7A /* ShortProjectEntity.swift in Sources */,
+				B9FC6C93245CB15900F51B7A /* Closures.swift in Sources */,
 				E15A2200FEC7959CE6FA8CF1 /* Presentable.swift in Sources */,
 				B9FC6C7B245CA07800F51B7A /* JiraProjectService.swift in Sources */,
 				CCFEF77F9E90859394772A36 /* Router.swift in Sources */,

@@ -3,7 +3,6 @@
 //  Jtrack
 //
 
-
 import Foundation
 
 enum ApiConstants {
