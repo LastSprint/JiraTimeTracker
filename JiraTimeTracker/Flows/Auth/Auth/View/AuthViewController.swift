@@ -80,10 +80,7 @@ extension AuthViewController: KeyboardObservable {
         let animationDuration = notification.keyboardInfo.animationDuration ?? 0.1
 
         guard
-            let keyboardHeight = notification.keyboardInfo.frameEnd?.height,
-            let endY = notification.keyboardInfo.frameEnd?.maxY,
-            let beginY = notification.keyboardInfo.frameBegin?.maxY
-//            beginY != endY
+            let keyboardHeight = notification.keyboardInfo.frameEnd?.height
         else {
             return
         }

@@ -3,3 +3,8 @@
 "Auth.TextField.Login.placeholder" = "Login";
 "Auth.TextField.Password.placeholder" = "Password";
 "Auth.Button.SignIn.title" = "Sign in";
+"Auth.Messages.error" = "Incorrect login and password";
+
+// MARK: - TabBar
+
+"TabBar.Items.Projects.title" = "Projects";

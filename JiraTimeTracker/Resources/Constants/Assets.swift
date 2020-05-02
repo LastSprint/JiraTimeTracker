@@ -31,6 +31,9 @@ public enum Styles {
   }
   public enum Image {
 
+    public enum TabBar {
+      public static let projectsItem = ImageAsset(name: "image/TabBar/projectsItem")
+    }
     public static let jiraLogo = ImageAsset(name: "image/jiraLogo")
     public static let surfLogo = ImageAsset(name: "image/surfLogo")
   }

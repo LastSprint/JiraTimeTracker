@@ -32,11 +32,15 @@ extension ApplicationCoordinator {
             self?.authorizedFlow()
         }
 
+        self.addDependency(authCoord)
+
         authCoord.start()
     }
 
     func authorizedFlow() {
-        // TODO: Add navigation
+        let flow = AuthorizedCoordinator(router: self.router)
+        self.addDependency(flow)
+
+        flow.run()
     }
 }
-

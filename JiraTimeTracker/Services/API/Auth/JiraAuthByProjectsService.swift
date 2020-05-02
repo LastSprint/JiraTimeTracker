@@ -18,13 +18,16 @@ struct JiraAuthByProjectsService {
 extension JiraAuthByProjectsService: JiraAuthService {
     func auth(login: String, password: String) -> Observer<Void> {
 
-        let token = Data("\(login):\(password)".utf8).base64EncodedString()
+        let token = "Basic " + Data("\(login):\(password)".utf8).base64EncodedString()
 
         return self.builder
             .route(.get, .projects)
             .set(query: ["recent": 5])
-            .set(metadata: ["Authorization": "Basic \(token)"])
+            .set(metadata: ["Authorization": token])
             .build()
             .process()
+            .map {
+                AppDelegate.authToken = token
+            }
     }
 }

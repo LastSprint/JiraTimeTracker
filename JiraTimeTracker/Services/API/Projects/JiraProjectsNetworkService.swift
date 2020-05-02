@@ -8,7 +8,7 @@ import NodeKit
 
 struct JiraProjectsNetworkService {
 
-    private var builder: UrlChainsBuilder<JiraProjectsRoutes> {
+    private var builder: AuthorizedChainBuilder<JiraProjectsRoutes> {
         .init()
     }
 }

@@ -22,3 +22,11 @@ extension UITextField {
         style.apply(for: self)
     }
 }
+
+// MARK: - UILabel
+
+extension UILabel {
+    open func apply(for style: UIStyle<UILabel>) {
+        style.apply(for: self)
+    }
+}

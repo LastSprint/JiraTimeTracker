@@ -19,6 +19,10 @@ public enum L10n {
         public static let title = L10n.tr("Localizable", "Auth.Button.SignIn.title")
       }
     }
+    public enum Messages {
+      /// Incorrect login and password
+      public static let error = L10n.tr("Localizable", "Auth.Messages.error")
+    }
     public enum TextField {
       public enum Login {
         /// Login
@@ -27,6 +31,15 @@ public enum L10n {
       public enum Password {
         /// Password
         public static let placeholder = L10n.tr("Localizable", "Auth.TextField.Password.placeholder")
+      }
+    }
+  }
+
+  public enum TabBar {
+    public enum Items {
+      public enum Projects {
+        /// Projects
+        public static let title = L10n.tr("Localizable", "TabBar.Items.Projects.title")
       }
     }
   }

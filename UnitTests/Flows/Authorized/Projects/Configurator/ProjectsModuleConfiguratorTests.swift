@@ -1,18 +1,18 @@
 //
-//  AuthModuleConfiguratorTests.swift
+//  ProjectsModuleConfiguratorTests.swift
 //  JiraTimeTracker
 //
 
 import XCTest
 @testable import JiraTimeTrackerRelease
 
-final class AuthModuleConfiguratorTests: XCTestCase {
+final class ProjectsModuleConfiguratorTests: XCTestCase {
 
     // MARK: - Tests
 
     func testDeallocation() {
         assertDeallocation(of: {
-            let (view, input) = AuthModuleConfigurator().configure()
+            let (view, input) = ProjectsModuleConfigurator().configure()
             return (view, [input])
         })
     }
