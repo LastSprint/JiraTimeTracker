@@ -16,3 +16,7 @@
 
 "Issues.Labels.Estimate.title" = "Оценка: %@";
 "Issues.Labels.Spent.title" = "Затрекано: %@";
+
+// MARK: - Errors
+
+"Errors.Common.Erased.title" = "Упс, что-то пошло не так";

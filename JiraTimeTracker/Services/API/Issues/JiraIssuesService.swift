@@ -13,4 +13,6 @@ protocol JiraIssuesService {
     ///
     /// - Parameter projectKey: Jira project Key (like JTT)
     func getRelativeIssues(for projectKey: String) -> Observer<[IssueEntity]>
+
+    func updateWorklog(issue: IssueEntity, seconds: Int) -> Observer<Void>
 }

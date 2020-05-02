@@ -16,3 +16,8 @@
 
 "Issues.Labels.Estimate.title" = "Estimate: %@";
 "Issues.Labels.Spent.title" = "Spent: %@";
+
+
+// MARK: - Errors
+
+"Errors.Common.Erased.title" = "Something went wrong";

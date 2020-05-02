@@ -99,6 +99,11 @@
 		B957D554245DD04C0059C989 /* SvgImageDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D553245DD04C0059C989 /* SvgImageDecoder.swift */; };
 		B957D557245DDF2F0059C989 /* Ints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D556245DDF2F0059C989 /* Ints.swift */; };
 		B957D559245DE9110059C989 /* IssueCellGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D558245DE9110059C989 /* IssueCellGenerator.swift */; };
+		B957D55C245DFEB60059C989 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D55B245DFEB60059C989 /* LoadingView.swift */; };
+		B957D55F245E0B950059C989 /* LoadingSpinnerDisplaybale.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D55E245E0B950059C989 /* LoadingSpinnerDisplaybale.swift */; };
+		B957D563245E16560059C989 /* UpdateWorklogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D562245E16560059C989 /* UpdateWorklogEntry.swift */; };
+		B957D565245E16CA0059C989 /* UpdateWorklogEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D564245E16CA0059C989 /* UpdateWorklogEntity.swift */; };
+		B957D567245E1DF50059C989 /* ErrorWrapperNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D566245E1DF50059C989 /* ErrorWrapperNode.swift */; };
 		B9709E76245CE1E000BE7974 /* ProjectsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9709E75245CE1E000BE7974 /* ProjectsCoordinator.swift */; };
 		B9709E79245D5EAF00BE7974 /* ShortProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9709E78245D5EAF00BE7974 /* ShortProjectCell.swift */; };
 		B9709E7C245D601100BE7974 /* UIStyle+UILabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9709E7B245D601100BE7974 /* UIStyle+UILabels.swift */; };
@@ -262,6 +267,12 @@
 		B957D553245DD04C0059C989 /* SvgImageDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SvgImageDecoder.swift; sourceTree = "<group>"; };
 		B957D556245DDF2F0059C989 /* Ints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ints.swift; sourceTree = "<group>"; };
 		B957D558245DE9110059C989 /* IssueCellGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueCellGenerator.swift; sourceTree = "<group>"; };
+		B957D55A245DFA7E0059C989 /* JTrack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JTrack.entitlements; sourceTree = "<group>"; };
+		B957D55B245DFEB60059C989 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		B957D55E245E0B950059C989 /* LoadingSpinnerDisplaybale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingSpinnerDisplaybale.swift; sourceTree = "<group>"; };
+		B957D562245E16560059C989 /* UpdateWorklogEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateWorklogEntry.swift; sourceTree = "<group>"; };
+		B957D564245E16CA0059C989 /* UpdateWorklogEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateWorklogEntity.swift; sourceTree = "<group>"; };
+		B957D566245E1DF50059C989 /* ErrorWrapperNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWrapperNode.swift; sourceTree = "<group>"; };
 		B9709E75245CE1E000BE7974 /* ProjectsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsCoordinator.swift; sourceTree = "<group>"; };
 		B9709E78245D5EAF00BE7974 /* ShortProjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortProjectCell.swift; sourceTree = "<group>"; };
 		B9709E7B245D601100BE7974 /* UIStyle+UILabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStyle+UILabels.swift"; sourceTree = "<group>"; };
@@ -585,6 +596,7 @@
 				B957D542245DBC6B0059C989 /* IssuePriorityEntity.swift */,
 				B957D540245DBC2E0059C989 /* IssueTypeEntity.swift */,
 				B957D544245DBCA70059C989 /* IssueStatusEntity.swift */,
+				B957D564245E16CA0059C989 /* UpdateWorklogEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -664,6 +676,7 @@
 		8702ECA6F3EDA661BFB49B3A /* Reusable Layer */ = {
 			isa = PBXGroup;
 			children = (
+				B957D55D245E0B860059C989 /* Loader */,
 				B9CAB5C3245C6019008C83C1 /* MessageBanner */,
 				B9FC6C92245CB15900F51B7A /* Closures.swift */,
 			);
@@ -718,6 +731,7 @@
 				B957D530245DB6FC0059C989 /* IssueTypeEntry.swift */,
 				B957D532245DB7820059C989 /* IssuePriorityEntry.swift */,
 				B957D534245DB7E70059C989 /* IssueStatusEntry.swift */,
+				B957D562245E16560059C989 /* UpdateWorklogEntry.swift */,
 			);
 			path = Entry;
 			sourceTree = "<group>";
@@ -733,6 +747,7 @@
 		A3299C31EBE6A34F1E88E83A = {
 			isa = PBXGroup;
 			children = (
+				B957D55A245DFA7E0059C989 /* JTrack.entitlements */,
 				412249B34E099437E895562B /* JiraTimeTracker */,
 				2CC6807FBEAF92ECD55A568D /* UnitTests */,
 				2383A61009B41FE8DB7438BE /* Products */,
@@ -836,6 +851,15 @@
 				B957D556245DDF2F0059C989 /* Ints.swift */,
 			);
 			path = Foundation;
+			sourceTree = "<group>";
+		};
+		B957D55D245E0B860059C989 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				B957D55B245DFEB60059C989 /* LoadingView.swift */,
+				B957D55E245E0B950059C989 /* LoadingSpinnerDisplaybale.swift */,
+			);
+			path = Loader;
 			sourceTree = "<group>";
 		};
 		B9709E74245CE1C000BE7974 /* List */ = {
@@ -963,6 +987,7 @@
 			children = (
 				B9FC6C9A245CD49300F51B7A /* AuhthorizedChain.swift */,
 				B9FC6C9D245CD53700F51B7A /* TokenMetaDataProvider.swift */,
+				B957D566245E1DF50059C989 /* ErrorWrapperNode.swift */,
 			);
 			path = NodeKit;
 			sourceTree = "<group>";
@@ -1520,6 +1545,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B957D563245E16560059C989 /* UpdateWorklogEntry.swift in Sources */,
 				908ABBBAE3D2223BBCEE6DDD /* AppDelegate.swift in Sources */,
 				C874965F653DACF8BD244D1E /* Assets.swift in Sources */,
 				B957D53D245DBB5B0059C989 /* IssueEntity.swift in Sources */,
@@ -1527,6 +1553,7 @@
 				B957D52A245D9DEB0059C989 /* ProjectCategoryEntity.swift in Sources */,
 				B9807469245B7D8D006DCC69 /* CommonTextFieldStyle.swift in Sources */,
 				B957D547245DBDF20059C989 /* IssueCell.swift in Sources */,
+				B957D55C245DFEB60059C989 /* LoadingView.swift in Sources */,
 				B9FC6C99245CD28800F51B7A /* Tabs.swift in Sources */,
 				86BEF918ED4220F49D3515B9 /* BaseCoordinator.swift in Sources */,
 				B9FC6C97245CC1C300F51B7A /* AuthCoordinator.swift in Sources */,
@@ -1542,6 +1569,7 @@
 				B9FC6C95245CC17700F51B7A /* ApplicationCoordinator.swift in Sources */,
 				B9807467245B735F006DCC69 /* Colors.swift in Sources */,
 				B9CAB5C2245C5E30008C83C1 /* MessageBannerDisplaybale.swift in Sources */,
+				B957D55F245E0B950059C989 /* LoadingSpinnerDisplaybale.swift in Sources */,
 				2D30C6DF51C0DEB8137A5EBB /* LaunchingApplicationService.swift in Sources */,
 				CBAFCB0D8509EB6271D8F609 /* MainRouter.swift in Sources */,
 				B9FC6C87245CA71F00F51B7A /* JiraProjectsRoutes.swift in Sources */,
@@ -1550,6 +1578,7 @@
 				B9FC6C93245CB15900F51B7A /* Closures.swift in Sources */,
 				E15A2200FEC7959CE6FA8CF1 /* Presentable.swift in Sources */,
 				B9FC6C7B245CA07800F51B7A /* JiraProjectService.swift in Sources */,
+				B957D565245E16CA0059C989 /* UpdateWorklogEntity.swift in Sources */,
 				B9709E85245D68BA00BE7974 /* UserEntry.swift in Sources */,
 				B957D528245D9D850059C989 /* ProjectCategoryEntry.swift in Sources */,
 				B957D533245DB7820059C989 /* IssuePriorityEntry.swift in Sources */,
@@ -1592,6 +1621,7 @@
 				EDE457FDF24084A998CFC42A /* TabBarPresenter.swift in Sources */,
 				A467C68592AB87565EE1E809 /* TabBarModuleInput.swift in Sources */,
 				0B65E61A3779CB00BA8CBFA3 /* TabBarModuleOutput.swift in Sources */,
+				B957D567245E1DF50059C989 /* ErrorWrapperNode.swift in Sources */,
 				B957D54E245DC6820059C989 /* JiraIssueNetworkService.swift in Sources */,
 				7B81D01BDA220A4704B1DC20 /* TabBarViewController.swift in Sources */,
 				B9709E7E245D606500BE7974 /* CommonLabel.swift in Sources */,
@@ -1742,6 +1772,7 @@
 			baseConfigurationReference = 61475E25C7CA2A21965ED0C8 /* Pods-JiraTimeTrackerDebug.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Debug";
+				CODE_SIGN_ENTITLEMENTS = JTrack.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = ZJ45BEVK69;
 				INFOPLIST_FILE = JiraTimeTracker/Application/Info/Debug/Info.plist;
@@ -1753,6 +1784,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.lastsprint.jiratimetracker.debug;
 				PRODUCT_NAME = JTrack;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1832,6 +1864,7 @@
 			baseConfigurationReference = 6404680037EC54118BCC8B45 /* Pods-JiraTimeTrackerDebug.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Debug";
+				CODE_SIGN_ENTITLEMENTS = JTrack.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = ZJ45BEVK69;
 				INFOPLIST_FILE = JiraTimeTracker/Application/Info/Debug/Info.plist;
@@ -1843,6 +1876,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.lastsprint.jiratimetracker.debug;
 				PRODUCT_NAME = JTrack;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;

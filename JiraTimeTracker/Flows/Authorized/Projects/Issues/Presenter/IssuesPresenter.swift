@@ -3,6 +3,8 @@
 //  JiraTimeTracker
 //
 
+import Foundation
+
 final class IssuesPresenter: IssuesViewOutput, IssuesModuleInput, IssuesModuleOutput {
 
     // MARK: - IssuesModuleOutput
@@ -30,6 +32,39 @@ final class IssuesPresenter: IssuesViewOutput, IssuesModuleInput, IssuesModuleOu
 
     func onIssueSelected(issue: IssueEntity) {
         self.onIssueSelected?(issue)
+    }
+
+    func startTrackIssue(issue: IssueEntity) {
+        self.view?.stopAll(except: issue)
+    }
+
+    func stopTrackIssue(issue: IssueEntity, seconds: Int) {
+
+        if seconds < 30 {
+            self.view?.show(warning: "30 секунд это слишком мало 🙃")
+            self.view?.commit(issue: issue)
+            return
+        }
+
+        let offsetSeconds = seconds % 60
+
+        var mutadedSecond = seconds
+
+        if offsetSeconds < 30 && offsetSeconds != 0 {
+            mutadedSecond = offsetSeconds
+        } else if offsetSeconds != 0 {
+            mutadedSecond += 60 - offsetSeconds
+        }
+
+        self.service
+            .updateWorklog(issue: issue, seconds: mutadedSecond)
+            .onCompleted { [weak self] in
+                self?.view?.show(success: "Затрекано: \(mutadedSecond.timeView)")
+                self?.view?.commit(issue: issue)
+            }.onError { [weak self] err in
+                self?.view?.show(error: err)
+                self?.view?.restore(issue: issue, seconds: mutadedSecond)
+            }
     }
 }
 

@@ -35,6 +35,15 @@ public enum L10n {
     }
   }
 
+  public enum Errors {
+    public enum Common {
+      public enum Erased {
+        /// Something went wrong
+        public static let title = L10n.tr("Localizable", "Errors.Common.Erased.title")
+      }
+    }
+  }
+
   public enum Issues {
     public enum Labels {
       public enum Estimate {

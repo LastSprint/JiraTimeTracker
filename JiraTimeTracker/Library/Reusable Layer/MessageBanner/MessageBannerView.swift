@@ -19,6 +19,7 @@ final class MessageBannerView: UIView {
         case success
         case error
         case info
+        case warning
     }
 
     private let textLabel: UILabel
@@ -90,8 +91,14 @@ private extension MessageBannerView {
 
         self.contentView.translatesAutoresizingMaskIntoConstraints = false
 
+        #if TARGET_OS_IPHONE
+        let topOffset = UIApplication.shared.statusBarFrame.height
+        #else
+        let topOffset: CGFloat = 46
+        #endif
+
         NSLayoutConstraint.activate([
-            self.contentView.topAnchor.constraint(equalTo: self.topAnchor, constant: UIApplication.shared.statusBarFrame.height),
+            self.contentView.topAnchor.constraint(equalTo: self.topAnchor, constant: topOffset),
             self.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: Constant.sideOffset),
             self.contentView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: Constant.sideOffset),
             self.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor, constant: Constant.sideOffset)
@@ -117,6 +124,8 @@ private extension MessageBannerView {
             self.contentView.backgroundColor = Styles.Colors.Main.control.color
         case.success:
             self.contentView.backgroundColor = Styles.Colors.Main.success.color
+        case .warning:
+            self.contentView.backgroundColor = Styles.Colors.Main.warning.color
         }
     }
 }

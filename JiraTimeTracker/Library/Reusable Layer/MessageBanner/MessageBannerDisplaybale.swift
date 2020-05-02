@@ -19,6 +19,7 @@ protocol MessageBannerDisplaybale {
 
     /// Use this for showing information about success
     func show(success: String)
+    func show(warning: String)
 }
 
 // MARK: - Default Impl
@@ -38,6 +39,10 @@ extension MessageBannerDisplaybale {
 
     func show(success: String) {
         self.show(banner: .init(state: .success, text: success))
+    }
+
+    func show(warning: String) {
+        self.show(banner: .init(state: .warning, text: warning))
     }
 
     private func show(banner: MessageBannerView) {

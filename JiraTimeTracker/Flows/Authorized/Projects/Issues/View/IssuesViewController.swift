@@ -15,6 +15,7 @@ final class IssuesViewController: UIViewController, IssuesViewInput {
     // MARK: - Properties
 
     private lazy var ddm = BaseTableDataDisplayManager(collection: self.tableView)
+    private var generators = [IssueCellGenerator]()
 
     var output: IssuesViewOutput?
 
@@ -43,9 +44,15 @@ final class IssuesViewController: UIViewController, IssuesViewInput {
 
         let gens = issues.map { issue -> IssueCellGenerator in
             let gen = IssueCellGenerator(model: issue)
-//            gen.didSelectEvent += { [weak self] in
-//                self?.output?.onIssueSelected(issue: issue)
-//            }
+
+            gen.onStartTracking = { [weak self] model in
+                self?.output?.startTrackIssue(issue: model)
+            }
+
+            gen.onEndTracking = { [weak self] args in
+                let (issue, seconds) = args
+                self?.output?.stopTrackIssue(issue: issue, seconds: seconds)
+            }
 
             return gen
         }
@@ -53,6 +60,41 @@ final class IssuesViewController: UIViewController, IssuesViewInput {
         self.ddm.addCellGenerators(gens)
 
         self.ddm.forceRefill()
+
+        self.generators = gens
+    }
+
+    func stopAll(except issue: IssueEntity) {
+        self.generators.forEach { gen in
+
+            guard gen.model.id != issue.id else {
+                return
+            }
+
+            gen.forceStop()
+        }
+    }
+
+    func restore(issue: IssueEntity, seconds: Int) {
+        self.generators.forEach { gen in
+
+            guard gen.model.id == issue.id else {
+                return
+            }
+
+            gen.restoreState(seconds: seconds)
+        }
+    }
+
+    func commit(issue: IssueEntity) {
+        self.generators.forEach { gen in
+
+            guard gen.model.id == issue.id else {
+                return
+            }
+
+            gen.commitState()
+        }
     }
 
 }

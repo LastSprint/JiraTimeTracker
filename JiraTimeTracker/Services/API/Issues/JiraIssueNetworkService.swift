@@ -26,4 +26,11 @@ extension JiraIssuesNetworkService: JiraIssuesService {
                 return model.issues
             }
     }
+
+    func updateWorklog(issue: IssueEntity, seconds: Int) -> Observer<Void> {
+        return self.builder
+            .route(.post, .worklog(issue.key))
+            .build()
+            .process(UpdateWorklogEntity(comment: "Surf Tracker", timeSpentSeconds: seconds))
+    }
 }

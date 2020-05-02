@@ -12,7 +12,8 @@ private final class AuthorizedServiceChain: UrlServiceChainBuilder {
     public override func requestTrasportChain(providers: [MetadataProvider], session: Session?) -> TransportLayerNode {
         let requestSenderNode = RequestSenderNode(rawResponseProcessor: self.urlResponseProcessingLayerChain())
         let technicalErrorMapperNode = TechnicaErrorMapperNode(next: requestSenderNode)
-        return RequestCreatorNode(next: technicalErrorMapperNode,
+        let errorWrapper = ErrorWrapperNode(next: technicalErrorMapperNode)
+        return RequestCreatorNode(next: errorWrapper,
                                   providers: providers + [TokenMetaDataProvider()],
                                   session: session)
     }

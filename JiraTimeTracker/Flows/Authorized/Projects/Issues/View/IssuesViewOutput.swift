@@ -8,4 +8,8 @@ protocol IssuesViewOutput {
     func viewLoaded()
 
     func onIssueSelected(issue: IssueEntity)
+
+    func startTrackIssue(issue: IssueEntity)
+
+    func stopTrackIssue(issue: IssueEntity, seconds: Int)
 }

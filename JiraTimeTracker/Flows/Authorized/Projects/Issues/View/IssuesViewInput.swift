@@ -8,4 +8,10 @@ protocol IssuesViewInput: AnyObject, MessageBannerDisplaybale {
     func setupInitialState(project: ShortProjectEntity)
 
     func show(issues: [IssueEntity])
+
+    func stopAll(except: IssueEntity)
+
+    func restore(issue: IssueEntity, seconds: Int)
+
+    func commit(issue: IssueEntity)
 }

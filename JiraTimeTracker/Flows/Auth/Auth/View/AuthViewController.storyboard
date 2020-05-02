@@ -17,9 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image/jiraLogo" translatesAutoresizingMaskIntoConstraints="NO" id="kpK-ye-GoF">
-                                <rect key="frame" x="79" y="58" width="216" height="137"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image/jiraLogo" translatesAutoresizingMaskIntoConstraints="NO" id="kpK-ye-GoF">
+                                <rect key="frame" x="87.5" y="64" width="200" height="137"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="3Fg-ZR-CSf"/>
+                                    <constraint firstAttribute="height" constant="137" id="yMX-dO-FRq"/>
+                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCU-9o-E2e">
                                 <rect key="frame" x="68" y="553" width="239" height="46"/>
@@ -54,9 +57,11 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="kpK-ye-GoF" firstAttribute="top" secondItem="YWU-9O-L7t" secondAttribute="top" constant="64" id="3ma-NY-FyB"/>
                             <constraint firstItem="KHz-N3-ZDM" firstAttribute="centerY" secondItem="cA6-JB-jfU" secondAttribute="centerY" priority="250" constant="-68" id="6UZ-v0-mvq"/>
                             <constraint firstItem="KHz-N3-ZDM" firstAttribute="top" relation="greaterThanOrEqual" secondItem="YWU-9O-L7t" secondAttribute="top" constant="28" id="HN1-ya-Dic"/>
                             <constraint firstItem="KHz-N3-ZDM" firstAttribute="leading" secondItem="YWU-9O-L7t" secondAttribute="leading" constant="48" id="KCK-w3-1fB"/>
+                            <constraint firstItem="kpK-ye-GoF" firstAttribute="centerX" secondItem="cA6-JB-jfU" secondAttribute="centerX" id="OGz-Ii-6lm"/>
                             <constraint firstItem="9QU-Ot-qM4" firstAttribute="leading" secondItem="YWU-9O-L7t" secondAttribute="leading" constant="48" id="P4u-Kp-FW9"/>
                             <constraint firstItem="YWU-9O-L7t" firstAttribute="bottom" secondItem="NCU-9o-E2e" secondAttribute="bottom" constant="68" id="Rvb-m8-Szo"/>
                             <constraint firstItem="NCU-9o-E2e" firstAttribute="leading" secondItem="YWU-9O-L7t" secondAttribute="leading" constant="68" id="a69-tz-Pns"/>

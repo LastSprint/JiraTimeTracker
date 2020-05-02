@@ -6,6 +6,8 @@
 import UIKit
 import ReactiveDataDisplayManager
 
+extension UIView: LoadingSpinnerDisplaybale { }
+
 final class IssueCell: UITableViewCell {
 
     // MARK: - Nested
@@ -13,6 +15,7 @@ final class IssueCell: UITableViewCell {
     enum State {
         case runned(seconds: Int)
         case stopped
+        case reload(seconds: Int)
 
         var img: UIImage {
             switch self {
@@ -20,6 +23,8 @@ final class IssueCell: UITableViewCell {
                 return Styles.Image.Issue.stop.image.withRenderingMode(.alwaysTemplate)
             case .stopped:
                 return Styles.Image.Issue.play.image.withRenderingMode(.alwaysTemplate)
+            case .reload:
+                return Styles.Image.Issue.reload.image.withRenderingMode(.alwaysTemplate)
             }
         }
 
@@ -29,12 +34,14 @@ final class IssueCell: UITableViewCell {
                 return Styles.Colors.Main.error.color
             case .stopped:
                 return Styles.Colors.Main.success.color
+            case .reload:
+                return Styles.Colors.Main.warning.color
             }
         }
 
         var time: String {
             switch self {
-            case .runned(let seconds):
+            case .runned(let seconds), .reload(let seconds):
                 return seconds.timerView
             case .stopped:
                 return "00:00"
@@ -71,7 +78,10 @@ final class IssueCell: UITableViewCell {
 
         self.timerLabel.text = state.time
 
-        UIView.transition(with: self.actionButton, duration: 0.25, options: .curveEaseIn, animations: {
+        UIView.transition(with: self.actionButton,
+                          duration: 0.25,
+                          options: .curveEaseIn,
+                          animations: {
             self.actionButton.setImage(state.img, for: .normal)
             self.actionButton.tintColor = state.color
         }, completion: nil)
@@ -79,6 +89,14 @@ final class IssueCell: UITableViewCell {
 
     func set(seconds: Int) {
         self.timerLabel.text = seconds.timerView
+    }
+
+    func startLaoding() {
+        self.actionContentView.startLoading(spinnerWidth: 32, spinnerHeight: 32)
+    }
+
+    func stopLoading() {
+        self.actionContentView.stopLoading()
     }
 }
 
