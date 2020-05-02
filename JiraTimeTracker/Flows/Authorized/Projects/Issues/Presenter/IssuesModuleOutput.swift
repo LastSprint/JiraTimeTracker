@@ -3,5 +3,6 @@
 //  JiraTimeTracker
 //
 
-protocol IssuesModuleOutput: class {
+protocol IssuesModuleOutput: AnyObject {
+    var onIssueSelected: Closure<IssueEntity>? { get set }
 }

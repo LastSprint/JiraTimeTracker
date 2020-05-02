@@ -35,6 +35,31 @@ public enum L10n {
     }
   }
 
+  public enum Issues {
+    public enum Labels {
+      public enum Estimate {
+        /// Estimate: %@
+        public static func title(_ p1: String) -> String {
+          return L10n.tr("Localizable", "Issues.Labels.Estimate.title", p1)
+        }
+      }
+      public enum Spent {
+        /// Spent: %@
+        public static func title(_ p1: String) -> String {
+          return L10n.tr("Localizable", "Issues.Labels.Spent.title", p1)
+        }
+      }
+    }
+    public enum Time {
+      public enum Short {
+        /// h
+        public static let hours = L10n.tr("Localizable", "Issues.Time.Short.hours")
+        /// m
+        public static let minutes = L10n.tr("Localizable", "Issues.Time.Short.minutes")
+      }
+    }
+  }
+
   public enum TabBar {
     public enum Items {
       public enum Projects {

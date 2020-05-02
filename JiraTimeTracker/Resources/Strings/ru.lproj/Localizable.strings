@@ -8,3 +8,11 @@
 // MARK: - TabBar
 
 "TabBar.Items.Projects.title" = "Проекты";
+
+// MARK: - Issues
+
+"Issues.Time.Short.minutes" = "м";
+"Issues.Time.Short.hours" = "ч";
+
+"Issues.Labels.Estimate.title" = "Оценка: %@";
+"Issues.Labels.Spent.title" = "Затрекано: %@";

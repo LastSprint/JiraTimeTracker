@@ -16,5 +16,4 @@ final class IssuesModuleConfiguratorTests: XCTestCase {
             return (view, [input])
         })
     }
-
 }

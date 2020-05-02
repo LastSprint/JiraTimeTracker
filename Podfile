@@ -20,6 +20,7 @@ def common_pods
     pod 'CryptoSwift', :git => 'https://github.com/krzyzanowskim/CryptoSwift', :tag => '1.3.1'
     pod 'SwiftMessages', '~> 7.0.1'
     pod 'Nuke', '~> 8.4.1'
+    pod 'PocketSVG', '~> 2.0'
 end
 
 def surf_utils

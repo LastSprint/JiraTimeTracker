@@ -27,11 +27,16 @@ public enum Styles {
       public static let description = ColorAsset(name: "Colors/Main/description")
       public static let error = ColorAsset(name: "Colors/Main/error")
       public static let success = ColorAsset(name: "Colors/Main/success")
+      public static let topLevelControl = ColorAsset(name: "Colors/Main/topLevelControl")
       public static let white = ColorAsset(name: "Colors/Main/white")
     }
   }
   public enum Image {
 
+    public enum Issue {
+      public static let play = ImageAsset(name: "image/Issue/play")
+      public static let stop = ImageAsset(name: "image/Issue/stop")
+    }
     public enum NavBar {
       public static let backArrow = ImageAsset(name: "image/NavBar/backArrow")
     }

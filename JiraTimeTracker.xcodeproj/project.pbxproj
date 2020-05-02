@@ -79,6 +79,26 @@
 		B90C0E9B245B4B1B0021D4DE /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C0E9A245B4B1B0021D4DE /* CGFloat.swift */; };
 		B957D528245D9D850059C989 /* ProjectCategoryEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D527245D9D850059C989 /* ProjectCategoryEntry.swift */; };
 		B957D52A245D9DEB0059C989 /* ProjectCategoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D529245D9DEB0059C989 /* ProjectCategoryEntity.swift */; };
+		B957D52D245DB61C0059C989 /* IssueEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D52C245DB61C0059C989 /* IssueEntry.swift */; };
+		B957D52F245DB6640059C989 /* IssueFieldEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D52E245DB6640059C989 /* IssueFieldEntry.swift */; };
+		B957D531245DB6FC0059C989 /* IssueTypeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D530245DB6FC0059C989 /* IssueTypeEntry.swift */; };
+		B957D533245DB7820059C989 /* IssuePriorityEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D532245DB7820059C989 /* IssuePriorityEntry.swift */; };
+		B957D535245DB7E70059C989 /* IssueStatusEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D534245DB7E70059C989 /* IssueStatusEntry.swift */; };
+		B957D539245DBA4F0059C989 /* PagingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D538245DBA4F0059C989 /* PagingEntry.swift */; };
+		B957D53B245DBAEC0059C989 /* PagingEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D53A245DBAEC0059C989 /* PagingEntity.swift */; };
+		B957D53D245DBB5B0059C989 /* IssueEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D53C245DBB5B0059C989 /* IssueEntity.swift */; };
+		B957D53F245DBBB10059C989 /* IssueFieldEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D53E245DBBB10059C989 /* IssueFieldEntity.swift */; };
+		B957D541245DBC2E0059C989 /* IssueTypeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D540245DBC2E0059C989 /* IssueTypeEntity.swift */; };
+		B957D543245DBC6B0059C989 /* IssuePriorityEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D542245DBC6B0059C989 /* IssuePriorityEntity.swift */; };
+		B957D545245DBCA70059C989 /* IssueStatusEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D544245DBCA70059C989 /* IssueStatusEntity.swift */; };
+		B957D547245DBDF20059C989 /* IssueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D546245DBDF20059C989 /* IssueCell.swift */; };
+		B957D549245DBE030059C989 /* IssueCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B957D548245DBE030059C989 /* IssueCell.xib */; };
+		B957D54C245DC5840059C989 /* JiraIssuesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D54B245DC5840059C989 /* JiraIssuesService.swift */; };
+		B957D54E245DC6820059C989 /* JiraIssueNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D54D245DC6820059C989 /* JiraIssueNetworkService.swift */; };
+		B957D550245DC6930059C989 /* JiraIssuesRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D54F245DC6930059C989 /* JiraIssuesRoutes.swift */; };
+		B957D554245DD04C0059C989 /* SvgImageDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D553245DD04C0059C989 /* SvgImageDecoder.swift */; };
+		B957D557245DDF2F0059C989 /* Ints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D556245DDF2F0059C989 /* Ints.swift */; };
+		B957D559245DE9110059C989 /* IssueCellGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D558245DE9110059C989 /* IssueCellGenerator.swift */; };
 		B9709E76245CE1E000BE7974 /* ProjectsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9709E75245CE1E000BE7974 /* ProjectsCoordinator.swift */; };
 		B9709E79245D5EAF00BE7974 /* ShortProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9709E78245D5EAF00BE7974 /* ShortProjectCell.swift */; };
 		B9709E7C245D601100BE7974 /* UIStyle+UILabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9709E7B245D601100BE7974 /* UIStyle+UILabels.swift */; };
@@ -222,6 +242,26 @@
 		B924ACA5EC806E63E6A2733C /* ProjectsListModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProjectsListModuleOutput.swift; sourceTree = "<group>"; };
 		B957D527245D9D850059C989 /* ProjectCategoryEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCategoryEntry.swift; sourceTree = "<group>"; };
 		B957D529245D9DEB0059C989 /* ProjectCategoryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCategoryEntity.swift; sourceTree = "<group>"; };
+		B957D52C245DB61C0059C989 /* IssueEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueEntry.swift; sourceTree = "<group>"; };
+		B957D52E245DB6640059C989 /* IssueFieldEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueFieldEntry.swift; sourceTree = "<group>"; };
+		B957D530245DB6FC0059C989 /* IssueTypeEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueTypeEntry.swift; sourceTree = "<group>"; };
+		B957D532245DB7820059C989 /* IssuePriorityEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssuePriorityEntry.swift; sourceTree = "<group>"; };
+		B957D534245DB7E70059C989 /* IssueStatusEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueStatusEntry.swift; sourceTree = "<group>"; };
+		B957D538245DBA4F0059C989 /* PagingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingEntry.swift; sourceTree = "<group>"; };
+		B957D53A245DBAEC0059C989 /* PagingEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingEntity.swift; sourceTree = "<group>"; };
+		B957D53C245DBB5B0059C989 /* IssueEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueEntity.swift; sourceTree = "<group>"; };
+		B957D53E245DBBB10059C989 /* IssueFieldEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueFieldEntity.swift; sourceTree = "<group>"; };
+		B957D540245DBC2E0059C989 /* IssueTypeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueTypeEntity.swift; sourceTree = "<group>"; };
+		B957D542245DBC6B0059C989 /* IssuePriorityEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssuePriorityEntity.swift; sourceTree = "<group>"; };
+		B957D544245DBCA70059C989 /* IssueStatusEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueStatusEntity.swift; sourceTree = "<group>"; };
+		B957D546245DBDF20059C989 /* IssueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueCell.swift; sourceTree = "<group>"; };
+		B957D548245DBE030059C989 /* IssueCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IssueCell.xib; sourceTree = "<group>"; };
+		B957D54B245DC5840059C989 /* JiraIssuesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiraIssuesService.swift; sourceTree = "<group>"; };
+		B957D54D245DC6820059C989 /* JiraIssueNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiraIssueNetworkService.swift; sourceTree = "<group>"; };
+		B957D54F245DC6930059C989 /* JiraIssuesRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiraIssuesRoutes.swift; sourceTree = "<group>"; };
+		B957D553245DD04C0059C989 /* SvgImageDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SvgImageDecoder.swift; sourceTree = "<group>"; };
+		B957D556245DDF2F0059C989 /* Ints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ints.swift; sourceTree = "<group>"; };
+		B957D558245DE9110059C989 /* IssueCellGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueCellGenerator.swift; sourceTree = "<group>"; };
 		B9709E75245CE1E000BE7974 /* ProjectsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsCoordinator.swift; sourceTree = "<group>"; };
 		B9709E78245D5EAF00BE7974 /* ShortProjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortProjectCell.swift; sourceTree = "<group>"; };
 		B9709E7B245D601100BE7974 /* UIStyle+UILabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStyle+UILabels.swift"; sourceTree = "<group>"; };
@@ -320,7 +360,6 @@
 			children = (
 				F43A386B70FEE7719759A513 /* IssuesViewTests.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -368,7 +407,6 @@
 			children = (
 				DAC0B2F34E6614C63838A78F /* IssuesModuleConfigurator.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -537,10 +575,16 @@
 		5A18D4756CB7B21030D4E90E /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				B957D537245DBA430059C989 /* Common */,
 				B9FC6C80245CA5C800F51B7A /* AvatarUrlEntity.swift */,
 				B9FC6C82245CA64A00F51B7A /* ShortProjectEntity.swift */,
 				B9709E82245D68B200BE7974 /* UserEntity.swift */,
 				B957D529245D9DEB0059C989 /* ProjectCategoryEntity.swift */,
+				B957D53C245DBB5B0059C989 /* IssueEntity.swift */,
+				B957D53E245DBBB10059C989 /* IssueFieldEntity.swift */,
+				B957D542245DBC6B0059C989 /* IssuePriorityEntity.swift */,
+				B957D540245DBC2E0059C989 /* IssueTypeEntity.swift */,
+				B957D544245DBCA70059C989 /* IssueStatusEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -568,7 +612,6 @@
 				8C80287F23A139D4503F3E47 /* Presenter */,
 				CB1F83C509CFF05BEDB78DA5 /* View */,
 			);
-			name = Issues;
 			path = Issues;
 			sourceTree = "<group>";
 		};
@@ -642,7 +685,6 @@
 				DE33C268AEEF652BE5D380FE /* IssuesModuleInput.swift */,
 				8842B5FF62C7D96F32CA5B30 /* IssuesModuleOutput.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -666,10 +708,16 @@
 		9772769E3CB9345B60B1C9A8 /* Entry */ = {
 			isa = PBXGroup;
 			children = (
+				B957D536245DBA3D0059C989 /* Common */,
 				B9FC6C7C245CA3F500F51B7A /* ShortProjectEntry.swift */,
 				B9FC6C7E245CA42F00F51B7A /* AvatarUrlEntry.swift */,
 				B9709E84245D68BA00BE7974 /* UserEntry.swift */,
 				B957D527245D9D850059C989 /* ProjectCategoryEntry.swift */,
+				B957D52C245DB61C0059C989 /* IssueEntry.swift */,
+				B957D52E245DB6640059C989 /* IssueFieldEntry.swift */,
+				B957D530245DB6FC0059C989 /* IssueTypeEntry.swift */,
+				B957D532245DB7820059C989 /* IssuePriorityEntry.swift */,
+				B957D534245DB7E70059C989 /* IssueStatusEntry.swift */,
 			);
 			path = Entry;
 			sourceTree = "<group>";
@@ -708,13 +756,13 @@
 			children = (
 				CFB765C47B556510FDE9C2A7 /* IssuesModuleConfiguratorTests.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
 		AA0E2F3445AE3021BE151A82 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B957D555245DDF270059C989 /* Foundation */,
 				A4677AC4F48F5D6EF03D2A0A /* UIKit */,
 			);
 			path = Extensions;
@@ -744,6 +792,50 @@
 				B90C0E9A245B4B1B0021D4DE /* CGFloat.swift */,
 			);
 			path = CG;
+			sourceTree = "<group>";
+		};
+		B957D52B245DAB0F0059C989 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B957D546245DBDF20059C989 /* IssueCell.swift */,
+				B957D548245DBE030059C989 /* IssueCell.xib */,
+				B957D558245DE9110059C989 /* IssueCellGenerator.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B957D536245DBA3D0059C989 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B957D538245DBA4F0059C989 /* PagingEntry.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B957D537245DBA430059C989 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B957D53A245DBAEC0059C989 /* PagingEntity.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B957D54A245DC5740059C989 /* Issues */ = {
+			isa = PBXGroup;
+			children = (
+				B957D54B245DC5840059C989 /* JiraIssuesService.swift */,
+				B957D54D245DC6820059C989 /* JiraIssueNetworkService.swift */,
+				B957D54F245DC6930059C989 /* JiraIssuesRoutes.swift */,
+			);
+			path = Issues;
+			sourceTree = "<group>";
+		};
+		B957D555245DDF270059C989 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				B957D556245DDF2F0059C989 /* Ints.swift */,
+			);
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 		B9709E74245CE1C000BE7974 /* List */ = {
@@ -776,6 +868,7 @@
 		B9709E7F245D644D00BE7974 /* Nuke */ = {
 			isa = PBXGroup;
 			children = (
+				B957D553245DD04C0059C989 /* SvgImageDecoder.swift */,
 			);
 			path = Nuke;
 			sourceTree = "<group>";
@@ -838,6 +931,7 @@
 		B9FC6C79245CA06500F51B7A /* API */ = {
 			isa = PBXGroup;
 			children = (
+				B957D54A245DC5740059C989 /* Issues */,
 				B9FC6C8C245CAAC500F51B7A /* Auth */,
 				B9FC6C84245CA6E200F51B7A /* Projects */,
 				B9FC6C88245CA77D00F51B7A /* ApiConstants.swift */,
@@ -896,12 +990,12 @@
 		CB1F83C509CFF05BEDB78DA5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B957D52B245DAB0F0059C989 /* Cells */,
 				005CF7E23A309266B98AEFEC /* IssuesViewController.swift */,
 				6D1B55B2791EDF98CDDFA70D /* IssuesViewController.storyboard */,
 				BAC6C6BBD41FA3B977A20B75 /* IssuesViewInput.swift */,
 				C236DAE2EAB2207FB1CC5BEE /* IssuesViewOutput.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -969,7 +1063,6 @@
 			children = (
 				8AD94F4F5437F8DA8A45A78C /* IssuesPresenterTests.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -980,7 +1073,6 @@
 				E2161C4C7BBB50E68A377891 /* Presenter */,
 				0266530CE5AFF16081BA9F7E /* View */,
 			);
-			name = Issues;
 			path = Issues;
 			sourceTree = "<group>";
 		};
@@ -1184,6 +1276,7 @@
 				6B23111F968E1A1B4EC38100 /* TabBarViewController.storyboard in Resources */,
 				89484B399031BF19F5AC7FD5 /* ProjectsListViewController.storyboard in Resources */,
 				D4E9B053831D0BC193778B17 /* IssuesViewController.storyboard in Resources */,
+				B957D549245DBE030059C989 /* IssueCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1429,8 +1522,11 @@
 			files = (
 				908ABBBAE3D2223BBCEE6DDD /* AppDelegate.swift in Sources */,
 				C874965F653DACF8BD244D1E /* Assets.swift in Sources */,
+				B957D53D245DBB5B0059C989 /* IssueEntity.swift in Sources */,
+				B957D559245DE9110059C989 /* IssueCellGenerator.swift in Sources */,
 				B957D52A245D9DEB0059C989 /* ProjectCategoryEntity.swift in Sources */,
 				B9807469245B7D8D006DCC69 /* CommonTextFieldStyle.swift in Sources */,
+				B957D547245DBDF20059C989 /* IssueCell.swift in Sources */,
 				B9FC6C99245CD28800F51B7A /* Tabs.swift in Sources */,
 				86BEF918ED4220F49D3515B9 /* BaseCoordinator.swift in Sources */,
 				B9FC6C97245CC1C300F51B7A /* AuthCoordinator.swift in Sources */,
@@ -1439,6 +1535,7 @@
 				B9FC6C7D245CA3F500F51B7A /* ShortProjectEntry.swift in Sources */,
 				B9807463245B61A1006DCC69 /* UIStyle+TextFields.swift in Sources */,
 				2A774E6365BB17618FF761E9 /* Coordinator.swift in Sources */,
+				B957D550245DC6930059C989 /* JiraIssuesRoutes.swift in Sources */,
 				A1DB6FC4E27AA5F5D767F880 /* DeepLinkOption.swift in Sources */,
 				B9807465245B723A006DCC69 /* UIStyle+Buttons.swift in Sources */,
 				B9807461245B5F59006DCC69 /* CommonUnderlineTextFieldStyle.swift in Sources */,
@@ -1455,6 +1552,7 @@
 				B9FC6C7B245CA07800F51B7A /* JiraProjectService.swift in Sources */,
 				B9709E85245D68BA00BE7974 /* UserEntry.swift in Sources */,
 				B957D528245D9D850059C989 /* ProjectCategoryEntry.swift in Sources */,
+				B957D533245DB7820059C989 /* IssuePriorityEntry.swift in Sources */,
 				CCFEF77F9E90859394772A36 /* Router.swift in Sources */,
 				B9CAB5C7245C6840008C83C1 /* Appearence.swift in Sources */,
 				B9FC6C8B245CA99B00F51B7A /* JiraProjectsNetworkService.swift in Sources */,
@@ -1462,28 +1560,39 @@
 				B9FC6C7F245CA42F00F51B7A /* AvatarUrlEntry.swift in Sources */,
 				B9CAB5C5245C602A008C83C1 /* MessageBannerView.swift in Sources */,
 				3A469E6E735AD3CBFBE45870 /* Strings.swift in Sources */,
+				B957D554245DD04C0059C989 /* SvgImageDecoder.swift in Sources */,
+				B957D52F245DB6640059C989 /* IssueFieldEntry.swift in Sources */,
 				B9FC6C8E245CAAD200F51B7A /* JiraAuthService.swift in Sources */,
 				4C859994DC2096F0D5604B42 /* UIApplication.swift in Sources */,
 				3071CF549F05633BF790FAFD /* AuthModuleConfigurator.swift in Sources */,
+				B957D52D245DB61C0059C989 /* IssueEntry.swift in Sources */,
 				B9FC6C81245CA5C800F51B7A /* AvatarUrlEntity.swift in Sources */,
 				B980745E245B5CFA006DCC69 /* CommonUIButtonStyle.swift in Sources */,
 				6E4AEBCD7E69D224C9AF0F8E /* AuthPresenter.swift in Sources */,
 				B9709E81245D647000BE7974 /* UIImageView+Nuke.swift in Sources */,
+				B957D541245DBC2E0059C989 /* IssueTypeEntity.swift in Sources */,
+				B957D531245DB6FC0059C989 /* IssueTypeEntry.swift in Sources */,
 				B9709E76245CE1E000BE7974 /* ProjectsCoordinator.swift in Sources */,
+				B957D545245DBCA70059C989 /* IssueStatusEntity.swift in Sources */,
 				24ABBF6A17F3942934AE7519 /* AuthModuleInput.swift in Sources */,
 				EB2672743B731F27D5C1CF6F /* AuthModuleOutput.swift in Sources */,
 				C9A29A0146191E52F291E12C /* AuthViewController.swift in Sources */,
 				B9FC6C89245CA77D00F51B7A /* ApiConstants.swift in Sources */,
+				B957D539245DBA4F0059C989 /* PagingEntry.swift in Sources */,
 				B9FC6CA0245CDC3400F51B7A /* AuthorizedCoordinator.swift in Sources */,
 				67AC8DA7B05B501A03DEE2A6 /* AuthViewInput.swift in Sources */,
 				CACBB7CBB899797FBBA518AB /* AuthViewOutput.swift in Sources */,
+				B957D535245DB7E70059C989 /* IssueStatusEntry.swift in Sources */,
+				B957D557245DDF2F0059C989 /* Ints.swift in Sources */,
 				B980745C245B5C3A006DCC69 /* UIStyle+Controls.swift in Sources */,
 				B974A5DC245D72B3003E6AEC /* NonNibCellGenrator.swift in Sources */,
 				A61F5DE5B07B13CA601755CC /* TabBarModuleConfigurator.swift in Sources */,
 				B9709E79245D5EAF00BE7974 /* ShortProjectCell.swift in Sources */,
+				B957D53F245DBBB10059C989 /* IssueFieldEntity.swift in Sources */,
 				EDE457FDF24084A998CFC42A /* TabBarPresenter.swift in Sources */,
 				A467C68592AB87565EE1E809 /* TabBarModuleInput.swift in Sources */,
 				0B65E61A3779CB00BA8CBFA3 /* TabBarModuleOutput.swift in Sources */,
+				B957D54E245DC6820059C989 /* JiraIssueNetworkService.swift in Sources */,
 				7B81D01BDA220A4704B1DC20 /* TabBarViewController.swift in Sources */,
 				B9709E7E245D606500BE7974 /* CommonLabel.swift in Sources */,
 				B9709E83245D68B200BE7974 /* UserEntity.swift in Sources */,
@@ -1493,14 +1602,17 @@
 				DAA13A10836CB35F6F6B781D /* ProjectsListPresenter.swift in Sources */,
 				D418A1E00CE0C3E747CFD0CA /* ProjectsListModuleInput.swift in Sources */,
 				5787D48B913764754AAA148A /* ProjectsListModuleOutput.swift in Sources */,
+				B957D53B245DBAEC0059C989 /* PagingEntity.swift in Sources */,
 				B9709E7C245D601100BE7974 /* UIStyle+UILabels.swift in Sources */,
 				6FAEC892116F49347687CA20 /* ProjectsViewController.swift in Sources */,
 				8C4F6986B073D6FA576C03CB /* ProjectsListViewInput.swift in Sources */,
+				B957D54C245DC5840059C989 /* JiraIssuesService.swift in Sources */,
 				065C8C0E1BF1D420C7E6D0AB /* ProjectsViewOutput.swift in Sources */,
 				120EEA6A7EC1FA3A9AA42C08 /* IssuesModuleConfigurator.swift in Sources */,
 				E366D6F28662F45D33968090 /* IssuesPresenter.swift in Sources */,
 				45B767C7CBA998537BEF6F51 /* IssuesModuleInput.swift in Sources */,
 				18AB4855B8BC6BA18F44F4A3 /* IssuesModuleOutput.swift in Sources */,
+				B957D543245DBC6B0059C989 /* IssuePriorityEntity.swift in Sources */,
 				4326CE4342FECB0E9974DFDE /* IssuesViewController.swift in Sources */,
 				DE382834E03E2045CEEB1DC2 /* IssuesViewInput.swift in Sources */,
 				5E4613FC88A46AAFD1ADEF0F /* IssuesViewOutput.swift in Sources */,

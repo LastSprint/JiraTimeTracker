@@ -8,3 +8,11 @@
 // MARK: - TabBar
 
 "TabBar.Items.Projects.title" = "Projects";
+
+// MARK: - Issues
+
+"Issues.Time.Short.minutes" = "m";
+"Issues.Time.Short.hours" = "h";
+
+"Issues.Labels.Estimate.title" = "Estimate: %@";
+"Issues.Labels.Spent.title" = "Spent: %@";

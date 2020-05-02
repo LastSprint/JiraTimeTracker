@@ -14,7 +14,7 @@ final class IssuesModuleConfigurator {
                                       bundle: Bundle.main).instantiateInitialViewController() as? IssuesViewController else {
             fatalError("Can't load IssuesViewController from storyboard, check that controller is initial view controller")
         }
-        let presenter = IssuesPresenter(project: project)
+        let presenter = IssuesPresenter(project: project, service: JiraIssuesNetworkService())
 
         presenter.view = view
         view.output = presenter

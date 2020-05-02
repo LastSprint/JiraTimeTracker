@@ -28,6 +28,11 @@ final class ProjectsListViewController: UIViewController, ProjectsListViewInput 
         self.tableView.separatorStyle = .none
         self.title = L10n.TabBar.Items.Projects.title
 
+        let img = Styles.Image.NavBar.backArrow.image.withRenderingMode(.alwaysTemplate)
+
+        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = img
+        self.navigationController?.navigationBar.backIndicatorImage = img
+
         self.navigationItem.backBarButtonItem = .init(title: nil, style: .plain, target: nil, action: nil)
     }
 
