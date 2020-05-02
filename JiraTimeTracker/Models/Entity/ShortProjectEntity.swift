@@ -13,6 +13,7 @@ struct ShortProjectEntity {
     /// Full project name, like iOS Department
     let name: String
     let avatarUrls: AvatrUrlsEntity
+    let category: ProjectCategoryEntity
 }
 
 extension ShortProjectEntity: DTODecodable {
@@ -20,6 +21,7 @@ extension ShortProjectEntity: DTODecodable {
         return try .init(id: dto.id,
                          key: dto.key,
                          name: dto.name,
-                         avatarUrls: .from(dto: dto.avatarUrls))
+                         avatarUrls: .from(dto: dto.avatarUrls),
+                         category: .from(dto: dto.projectCategory))
     }
 }

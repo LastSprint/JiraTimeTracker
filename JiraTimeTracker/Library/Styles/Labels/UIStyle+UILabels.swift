@@ -25,4 +25,13 @@ extension UIStyle where Control == UILabel {
                          alignment: .left,
                          linesCount: 0)
     }
+
+    static var description: UIStyle<UILabel> {
+        CommonLabelStyle(textColor: Styles.Colors.Main.description.color,
+                         font: UIFont.systemFont(ofSize: 14, weight: .regular),
+                         kern: nil,
+                         lineHeight: nil,
+                         alignment: .left,
+                         linesCount: 0)
+    }
 }

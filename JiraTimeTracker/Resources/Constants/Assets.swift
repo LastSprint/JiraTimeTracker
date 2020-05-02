@@ -24,6 +24,7 @@ public enum Styles {
       public static let background = ColorAsset(name: "Colors/Main/background")
       public static let border = ColorAsset(name: "Colors/Main/border")
       public static let control = ColorAsset(name: "Colors/Main/control")
+      public static let description = ColorAsset(name: "Colors/Main/description")
       public static let error = ColorAsset(name: "Colors/Main/error")
       public static let success = ColorAsset(name: "Colors/Main/success")
       public static let white = ColorAsset(name: "Colors/Main/white")

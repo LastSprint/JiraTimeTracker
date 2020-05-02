@@ -68,6 +68,8 @@
 		ABB437EAC84E3F00F3448ED5 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B580826A2B4958C924F333B /* TabBarViewController.swift */; };
 		ADD3FEFB2C74D31124CF8D08 /* AuthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2771DBDC76DD3FA27DD2A0C0 /* AuthPresenter.swift */; };
 		B90C0E9B245B4B1B0021D4DE /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C0E9A245B4B1B0021D4DE /* CGFloat.swift */; };
+		B957D528245D9D850059C989 /* ProjectCategoryEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D527245D9D850059C989 /* ProjectCategoryEntry.swift */; };
+		B957D52A245D9DEB0059C989 /* ProjectCategoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D529245D9DEB0059C989 /* ProjectCategoryEntity.swift */; };
 		B9709E76245CE1E000BE7974 /* ProjectsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9709E75245CE1E000BE7974 /* ProjectsCoordinator.swift */; };
 		B9709E79245D5EAF00BE7974 /* ShortProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9709E78245D5EAF00BE7974 /* ShortProjectCell.swift */; };
 		B9709E7C245D601100BE7974 /* UIStyle+UILabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9709E7B245D601100BE7974 /* UIStyle+UILabels.swift */; };
@@ -75,6 +77,7 @@
 		B9709E81245D647000BE7974 /* UIImageView+Nuke.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9709E80245D647000BE7974 /* UIImageView+Nuke.swift */; };
 		B9709E83245D68B200BE7974 /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9709E82245D68B200BE7974 /* UserEntity.swift */; };
 		B9709E85245D68BA00BE7974 /* UserEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9709E84245D68BA00BE7974 /* UserEntry.swift */; };
+		B974A5DC245D72B3003E6AEC /* NonNibCellGenrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B974A5DB245D72B2003E6AEC /* NonNibCellGenrator.swift */; };
 		B980745C245B5C3A006DCC69 /* UIStyle+Controls.swift in Sources */ = {isa = PBXBuildFile; fileRef = B980745B245B5C3A006DCC69 /* UIStyle+Controls.swift */; };
 		B980745E245B5CFA006DCC69 /* CommonUIButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B980745D245B5CFA006DCC69 /* CommonUIButtonStyle.swift */; };
 		B9807461245B5F59006DCC69 /* CommonUnderlineTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9807460245B5F59006DCC69 /* CommonUnderlineTextFieldStyle.swift */; };
@@ -193,6 +196,8 @@
 		B7FE3D7159868F53F6F8677A /* TabBarPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarPresenterTests.swift; sourceTree = "<group>"; };
 		B90C0E9A245B4B1B0021D4DE /* CGFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
 		B924ACA5EC806E63E6A2733C /* ProjectsListModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProjectsListModuleOutput.swift; sourceTree = "<group>"; };
+		B957D527245D9D850059C989 /* ProjectCategoryEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCategoryEntry.swift; sourceTree = "<group>"; };
+		B957D529245D9DEB0059C989 /* ProjectCategoryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCategoryEntity.swift; sourceTree = "<group>"; };
 		B9709E75245CE1E000BE7974 /* ProjectsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsCoordinator.swift; sourceTree = "<group>"; };
 		B9709E78245D5EAF00BE7974 /* ShortProjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortProjectCell.swift; sourceTree = "<group>"; };
 		B9709E7B245D601100BE7974 /* UIStyle+UILabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStyle+UILabels.swift"; sourceTree = "<group>"; };
@@ -200,6 +205,7 @@
 		B9709E80245D647000BE7974 /* UIImageView+Nuke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Nuke.swift"; sourceTree = "<group>"; };
 		B9709E82245D68B200BE7974 /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
 		B9709E84245D68BA00BE7974 /* UserEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntry.swift; sourceTree = "<group>"; };
+		B974A5DB245D72B2003E6AEC /* NonNibCellGenrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonNibCellGenrator.swift; sourceTree = "<group>"; };
 		B980745B245B5C3A006DCC69 /* UIStyle+Controls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStyle+Controls.swift"; sourceTree = "<group>"; };
 		B980745D245B5CFA006DCC69 /* CommonUIButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUIButtonStyle.swift; sourceTree = "<group>"; };
 		B9807460245B5F59006DCC69 /* CommonUnderlineTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUnderlineTextFieldStyle.swift; sourceTree = "<group>"; };
@@ -485,6 +491,7 @@
 				B9FC6C80245CA5C800F51B7A /* AvatarUrlEntity.swift */,
 				B9FC6C82245CA64A00F51B7A /* ShortProjectEntity.swift */,
 				B9709E82245D68B200BE7974 /* UserEntity.swift */,
+				B957D529245D9DEB0059C989 /* ProjectCategoryEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -591,6 +598,7 @@
 				B9FC6C7C245CA3F500F51B7A /* ShortProjectEntry.swift */,
 				B9FC6C7E245CA42F00F51B7A /* AvatarUrlEntry.swift */,
 				B9709E84245D68BA00BE7974 /* UserEntry.swift */,
+				B957D527245D9D850059C989 /* ProjectCategoryEntry.swift */,
 			);
 			path = Entry;
 			sourceTree = "<group>";
@@ -643,6 +651,7 @@
 		AE0B5FFABB2B9268F754DB6B /* Third Party */ = {
 			isa = PBXGroup;
 			children = (
+				B974A5DA245D7293003E6AEC /* RDDM */,
 				B9709E7F245D644D00BE7974 /* Nuke */,
 				B9FC6C9C245CD4C200F51B7A /* NodeKit */,
 			);
@@ -689,6 +698,14 @@
 			children = (
 			);
 			path = Nuke;
+			sourceTree = "<group>";
+		};
+		B974A5DA245D7293003E6AEC /* RDDM */ = {
+			isa = PBXGroup;
+			children = (
+				B974A5DB245D72B2003E6AEC /* NonNibCellGenrator.swift */,
+			);
+			path = RDDM;
 			sourceTree = "<group>";
 		};
 		B9807459245B5BD8006DCC69 /* Styles */ = {
@@ -1287,6 +1304,7 @@
 			files = (
 				908ABBBAE3D2223BBCEE6DDD /* AppDelegate.swift in Sources */,
 				C874965F653DACF8BD244D1E /* Assets.swift in Sources */,
+				B957D52A245D9DEB0059C989 /* ProjectCategoryEntity.swift in Sources */,
 				B9807469245B7D8D006DCC69 /* CommonTextFieldStyle.swift in Sources */,
 				B9FC6C99245CD28800F51B7A /* Tabs.swift in Sources */,
 				86BEF918ED4220F49D3515B9 /* BaseCoordinator.swift in Sources */,
@@ -1311,6 +1329,7 @@
 				E15A2200FEC7959CE6FA8CF1 /* Presentable.swift in Sources */,
 				B9FC6C7B245CA07800F51B7A /* JiraProjectService.swift in Sources */,
 				B9709E85245D68BA00BE7974 /* UserEntry.swift in Sources */,
+				B957D528245D9D850059C989 /* ProjectCategoryEntry.swift in Sources */,
 				CCFEF77F9E90859394772A36 /* Router.swift in Sources */,
 				B9CAB5C7245C6840008C83C1 /* Appearence.swift in Sources */,
 				B9FC6C8B245CA99B00F51B7A /* JiraProjectsNetworkService.swift in Sources */,
@@ -1334,6 +1353,7 @@
 				67AC8DA7B05B501A03DEE2A6 /* AuthViewInput.swift in Sources */,
 				CACBB7CBB899797FBBA518AB /* AuthViewOutput.swift in Sources */,
 				B980745C245B5C3A006DCC69 /* UIStyle+Controls.swift in Sources */,
+				B974A5DC245D72B3003E6AEC /* NonNibCellGenrator.swift in Sources */,
 				A61F5DE5B07B13CA601755CC /* TabBarModuleConfigurator.swift in Sources */,
 				B9709E79245D5EAF00BE7974 /* ShortProjectCell.swift in Sources */,
 				EDE457FDF24084A998CFC42A /* TabBarPresenter.swift in Sources */,

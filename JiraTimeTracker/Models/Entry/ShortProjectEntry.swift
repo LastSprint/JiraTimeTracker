@@ -11,6 +11,7 @@ struct ShortProjectEntry: Codable {
     let key: String
     let name: String
     let avatarUrls: AvatrUrlsEntry
+    let projectCategory: ProjectCategoryEntry
 }
 
 extension ShortProjectEntry: RawMappable {

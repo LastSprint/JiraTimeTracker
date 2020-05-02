@@ -3,7 +3,7 @@
 //  JiraTimeTracker
 //
 
-protocol ProjectsListViewInput: class {
+protocol ProjectsListViewInput: AnyObject, MessageBannerDisplaybale {
     /// Method for setup initial state of view
-    func setupInitialState()
+    func setupInitialState(models: [ShortProjectEntity])
 }

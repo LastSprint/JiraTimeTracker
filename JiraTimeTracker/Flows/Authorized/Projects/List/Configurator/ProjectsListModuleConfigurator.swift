@@ -14,7 +14,7 @@ final class ProjectsListModuleConfigurator {
                                       bundle: Bundle.main).instantiateInitialViewController() as? ProjectsListViewController else {
             fatalError("Can't load ProjectsViewController from storyboard, check that controller is initial view controller")
         }
-        let presenter = ProjectsListPresenter()
+        let presenter = ProjectsListPresenter(service: JiraProjectsNetworkService())
 
         presenter.view = view
         view.output = presenter

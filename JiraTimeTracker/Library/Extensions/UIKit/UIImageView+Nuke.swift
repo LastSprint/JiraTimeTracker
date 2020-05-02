@@ -9,7 +9,7 @@ import Nuke
 extension UIImageView {
     func load(url: String) {
 
-        self.image = Styles.Image.TabBar.projectsItem.image
+        self.image = Styles.Image.TabBar.projectsItem.image.withRenderingMode(.alwaysTemplate)
 
         guard let converted = URL(string: url) else {
             return
