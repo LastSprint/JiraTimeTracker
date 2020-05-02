@@ -41,8 +41,8 @@ final class IssuesPresenter: IssuesViewOutput, IssuesModuleInput, IssuesModuleOu
     func stopTrackIssue(issue: IssueEntity, seconds: Int) {
 
         if seconds < 30 {
-            self.view?.show(warning: "30 секунд это слишком мало 🙃")
-            self.view?.commit(issue: issue)
+            self.view?.show(warning: "\(seconds) секунд это слишком мало 🙃")
+            self.view?.commit(issue: issue, seconds: issue.fields.timespent)
             return
         }
 
@@ -50,8 +50,8 @@ final class IssuesPresenter: IssuesViewOutput, IssuesModuleInput, IssuesModuleOu
 
         var mutadedSecond = seconds
 
-        if offsetSeconds < 30 && offsetSeconds != 0 {
-            mutadedSecond = offsetSeconds
+        if offsetSeconds < 30 {
+            mutadedSecond -= offsetSeconds
         } else if offsetSeconds != 0 {
             mutadedSecond += 60 - offsetSeconds
         }
@@ -60,7 +60,7 @@ final class IssuesPresenter: IssuesViewOutput, IssuesModuleInput, IssuesModuleOu
             .updateWorklog(issue: issue, seconds: mutadedSecond)
             .onCompleted { [weak self] in
                 self?.view?.show(success: "Затрекано: \(mutadedSecond.timeView)")
-                self?.view?.commit(issue: issue)
+                self?.view?.commit(issue: issue, seconds: issue.fields.timespent + mutadedSecond)
             }.onError { [weak self] err in
                 self?.view?.show(error: err)
                 self?.view?.restore(issue: issue, seconds: mutadedSecond)

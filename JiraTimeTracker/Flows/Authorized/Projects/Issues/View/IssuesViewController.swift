@@ -86,14 +86,14 @@ final class IssuesViewController: UIViewController, IssuesViewInput {
         }
     }
 
-    func commit(issue: IssueEntity) {
+    func commit(issue: IssueEntity, seconds: Int) {
         self.generators.forEach { gen in
 
             guard gen.model.id == issue.id else {
                 return
             }
 
-            gen.commitState()
+            gen.commitState(seconds: seconds)
         }
     }
 

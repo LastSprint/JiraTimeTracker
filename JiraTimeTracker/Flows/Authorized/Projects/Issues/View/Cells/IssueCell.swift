@@ -98,6 +98,11 @@ final class IssueCell: UITableViewCell {
     func stopLoading() {
         self.actionContentView.stopLoading()
     }
+
+    func setLoged(seconds: Int) {
+        self.timespantLabel.apply(for: .subtitle)
+        self.timespantLabel.text = L10n.Issues.Labels.Spent.title(seconds.timeView)
+    }
 }
 
 // MARK: - Configuration

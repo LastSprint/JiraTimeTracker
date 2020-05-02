@@ -40,8 +40,9 @@ final class IssueCellGenerator {
         self.cell?.startLoading()
     }
 
-    func commitState() {
+    func commitState(seconds: Int) {
         self.cell?.stopLoading()
+        self.cell?.setLoged(seconds: seconds)
         self.state = .stopped
         self.cell?.set(state: self.state)
     }

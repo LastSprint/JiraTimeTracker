@@ -13,5 +13,5 @@ protocol IssuesViewInput: AnyObject, MessageBannerDisplaybale {
 
     func restore(issue: IssueEntity, seconds: Int)
 
-    func commit(issue: IssueEntity)
+    func commit(issue: IssueEntity, seconds: Int)
 }
