@@ -32,6 +32,16 @@ private extension ProjectsCoordinator {
 
         let (view, output) = ProjectsListModuleConfigurator().configure()
 
+        output.onProjectSelect = { [weak self] project in
+            self?.runIssuesFlow(for: project)
+        }
+
         self.router.setNavigationControllerRootModule(view, animated: false, hideBar: false)
+    }
+
+    func runIssuesFlow(for project: ShortProjectEntity) {
+        let (view, output) = IssuesModuleConfigurator().configure(for: project)
+
+        self.router.push(view)
     }
 }
