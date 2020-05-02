@@ -25,12 +25,13 @@ final class IssuesViewController: UIViewController, IssuesViewInput {
         output?.viewLoaded()
         self.view.backgroundColor = Styles.Colors.Main.background.color
         self.tableView.backgroundColor = .clear
+        self.navigationController?.navigationBar.tintColor = .white
     }
 
     // MARK: - IssuesViewInput
 
-    func setupInitialState() {
-
+    func setupInitialState(project: ShortProjectEntity) {
+        self.navigationItem.title = project.name
     }
 
 }

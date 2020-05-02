@@ -32,6 +32,9 @@ public enum Styles {
   }
   public enum Image {
 
+    public enum NavBar {
+      public static let backArrow = ImageAsset(name: "image/NavBar/backArrow")
+    }
     public enum TabBar {
       public static let projectsItem = ImageAsset(name: "image/TabBar/projectsItem")
     }

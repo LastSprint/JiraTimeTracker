@@ -27,6 +27,8 @@ final class ProjectsListViewController: UIViewController, ProjectsListViewInput 
         self.tableView.backgroundColor = .clear
         self.tableView.separatorStyle = .none
         self.title = L10n.TabBar.Items.Projects.title
+
+        self.navigationItem.backBarButtonItem = .init(title: nil, style: .plain, target: nil, action: nil)
     }
 
     // MARK: - ProjectsViewInput
