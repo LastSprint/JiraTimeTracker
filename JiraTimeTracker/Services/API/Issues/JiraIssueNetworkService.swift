@@ -15,11 +15,11 @@ struct JiraIssuesNetworkService {
 extension JiraIssuesNetworkService: JiraIssuesService {
     func getRelativeIssues(for projectKey: String) -> Observer<[IssueEntity]> {
 
-        let jql = "project=\(projectKey) and status!=Done and assignee=currentUser()"
+        let jql = "project=\(projectKey) and status!=Done and status!=Rejected and assignee=currentUser()"
 
         return self.builder
             .route(.get, .search)
-            .set(query: ["jql": jql])
+            .set(query: ["jql": jql, "maxResults": 100, "startAt": 0])
             .build()
             .process()
             .map { (model: PagingEntity) in
