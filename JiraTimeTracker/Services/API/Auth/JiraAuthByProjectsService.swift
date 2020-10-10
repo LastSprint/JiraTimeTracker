@@ -6,12 +6,24 @@
 import Foundation
 import NodeKit
 
+struct JiraAuthByProjectsServiceFactory {
+    func produce() -> JiraAuthByProjectsService {
+        return JiraAuthByProjectsService(userDataStorage: UserDataKeychainStorage())
+    }
+}
+
 /// Makes authorization by sending projects request
 /// And if it's success then save auth data
 struct JiraAuthByProjectsService {
 
     private var builder: UrlChainsBuilder<JiraProjectsRoutes> {
         .init()
+    }
+
+    private let userDataStorage: UserDataStorage
+
+    init(userDataStorage: UserDataStorage) {
+        self.userDataStorage = userDataStorage
     }
 }
 
@@ -27,7 +39,12 @@ extension JiraAuthByProjectsService: JiraAuthService {
             .build()
             .process()
             .map {
-                AppDelegate.authToken = token
+                do {
+                    try self.userDataStorage.write(data: token)
+                } catch {
+                    return .emit(error: error)
+                }
+                return .emit(data: ())
             }
     }
 }

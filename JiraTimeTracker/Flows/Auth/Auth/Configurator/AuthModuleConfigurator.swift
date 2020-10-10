@@ -14,7 +14,8 @@ final class AuthModuleConfigurator {
                                       bundle: Bundle.main).instantiateInitialViewController() as? AuthViewController else {
             fatalError("Can't load AuthViewController from storyboard, check that controller is initial view controller")
         }
-        let presenter = AuthPresenter(service: JiraAuthByProjectsService())
+        
+        let presenter = AuthPresenter(service: JiraAuthByProjectsServiceFactory().produce())
 
         presenter.view = view
         view.output = presenter

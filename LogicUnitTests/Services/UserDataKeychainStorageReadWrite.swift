@@ -70,6 +70,8 @@ final class UserDataKeychainStorageReadWrite: XCTestCase {
 
         // Assert
 
-        XCTAssertEqual(dataToWrite, readed, "Readed data: \(readed) isn't equal to had written \(dataToWrite)")
+        XCTAssertEqual(dataToWrite,
+                       readed,
+                       "Readed data: \(readed) isn't equal to had written \(dataToWrite)")
     }
 }

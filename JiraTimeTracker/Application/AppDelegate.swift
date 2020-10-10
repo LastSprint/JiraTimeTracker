@@ -18,7 +18,7 @@ class AppDelegate: PluggableApplicationDelegate {
 
     override var services: [ApplicationService] {
         return [
-            LaunchingRootView()
+            LaunchingRootView(storage: UserDataKeychainStorage())
         ]
     }
 

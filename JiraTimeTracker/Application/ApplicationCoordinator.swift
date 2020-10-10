@@ -7,15 +7,26 @@ import Foundation
 
 final class ApplicationCoordinator: BaseCoordinator {
 
+    enum Option {
+        case auth
+        case skipAuth
+    }
+
     private let router: Router
 
     override init() {
         self.router = MainRouter()
     }
 
-    override func start() {
-        self.runAuthFlow()
+    func start(option: Option) {
+        switch option {
+        case .auth:
+            self.runAuthFlow()
+        case .skipAuth:
+            self.authorizedFlow()
+        }
     }
+
 }
 
 // MARK: - Flows Runner
