@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1131"
+   LastUpgradeVersion = "1200"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -44,6 +44,16 @@
                BlueprintIdentifier = "9B20B9BF96B420361D476206"
                BuildableName = "UnitTests.xctest"
                BlueprintName = "UnitTests"
+               ReferencedContainer = "container:JiraTimeTracker.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9EAF0368253243A8004655DC"
+               BuildableName = "LogicUnitTests.xctest"
+               BlueprintName = "LogicUnitTests"
                ReferencedContainer = "container:JiraTimeTracker.xcodeproj">
             </BuildableReference>
          </TestableReference>

@@ -21,15 +21,15 @@ public enum Styles {
   public enum Colors {
 
     public enum Main {
-      public static let background = ColorAsset(name: "Colors/Main/background")
-      public static let border = ColorAsset(name: "Colors/Main/border")
-      public static let control = ColorAsset(name: "Colors/Main/control")
-      public static let description = ColorAsset(name: "Colors/Main/description")
-      public static let error = ColorAsset(name: "Colors/Main/error")
-      public static let success = ColorAsset(name: "Colors/Main/success")
-      public static let topLevelControl = ColorAsset(name: "Colors/Main/topLevelControl")
-      public static let warning = ColorAsset(name: "Colors/Main/warning")
-      public static let white = ColorAsset(name: "Colors/Main/white")
+      public static let background = ColorAsset(name: "Colors/main/background")
+      public static let border = ColorAsset(name: "Colors/main/border")
+      public static let control = ColorAsset(name: "Colors/main/control")
+      public static let description = ColorAsset(name: "Colors/main/description")
+      public static let error = ColorAsset(name: "Colors/main/error")
+      public static let success = ColorAsset(name: "Colors/main/success")
+      public static let topLevelControl = ColorAsset(name: "Colors/main/topLevelControl")
+      public static let warning = ColorAsset(name: "Colors/main/warning")
+      public static let white = ColorAsset(name: "Colors/main/white")
     }
   }
   public enum Image {
