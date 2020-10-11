@@ -14,12 +14,14 @@ class AppDelegate: PluggableApplicationDelegate {
     /// Because i use Basic auth and, you know, it's just login and password in Base64 (:
     static var authToken: String?
 
+    let coreDataService = SetUpCoreDataAppService()
+
     // MARK: - Properties
 
     override var services: [ApplicationService] {
         return [
-            LaunchingRootView(storage: UserDataKeychainStorage())
+            LaunchingRootView(storage: UserDataKeychainStorage()),
+            coreDataService
         ]
     }
-
 }

@@ -7,7 +7,6 @@ whitelist_rules:
     - collection_alignment
     - colon
     - comma
-    - conditional_returns_on_newline
     - control_statement
     - convenience_type
     - custom_rules

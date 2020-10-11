@@ -22,6 +22,7 @@ enum UserDataCryptoStoreError: Error {
     case cantDelete
 }
 
+/// This storage encrypt user's data by `AES.GCM` and save it to Keychain
 struct UserDataKeychainStorage: UserDataStorage {
 
     private enum Const {
@@ -34,7 +35,7 @@ struct UserDataKeychainStorage: UserDataStorage {
     /// Saves key and encrypted data in Keychain
     ///
     /// - Parameters
-    ///     - data: Data you want to
+    ///     - data: Data you want to securely save
     ///
     /// - Throws:
     ///     - UserDataCryptoStoreError.catConvertStringToData
@@ -70,6 +71,17 @@ struct UserDataKeychainStorage: UserDataStorage {
         }
     }
 
+    /// Read symmetric key from keychain
+    /// Read user data (encrypted) from keychain
+    /// Then decrypt data with private key
+    ///
+    /// If data or key don't exist in keychain
+    /// will throws `UserDataCryptoStoreError.cantFindDataInKeychain`
+    ///
+    /// - Throws
+    ///     - UserDataCryptoStoreError.cantConvertDataToString
+    ///     - UserDataCryptoStoreError.cantReadDataFromKecyhain
+    ///     - UserDataCryptoStoreError.cantFindDataInKeychain
     func read() throws -> String {
 
         let key = try readGenericPassword(account: Const.keyId)
@@ -88,11 +100,18 @@ struct UserDataKeychainStorage: UserDataStorage {
         return result
     }
 
+    /// Delete all data liked to this type of storage
+    /// If there are not any data method will just returns, no error will be thrown
+    ///
+    /// **WARNING**
+    /// This operation deletes global data
+    ///
+    /// - Throws:
+    ///     - UserDataCryptoStoreError.cantDelete
     func clear() throws {
         try self.delete(account: Const.dataId)
         try self.delete(account: Const.keyId)
     }
-
 }
 
 // MARK: - Private Helpers
@@ -104,7 +123,7 @@ private extension UserDataKeychainStorage {
         let query = [
             kSecClass: kSecClassGenericPassword,
             kSecUseDataProtectionKeychain: true,
-            kSecAttrAccount: account,
+            kSecAttrAccount: account
         ] as CFDictionary
 
         var result: CFTypeRef?

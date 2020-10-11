@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="19H2" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="DBIssueEntity" representedClassName="DBIssueEntity" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="key" optional="YES" attributeType="String"/>
+        <relationship name="fields" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="DBIssueFieldEntity" inverseName="issue" inverseEntity="DBIssueFieldEntity"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="key"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="DBIssueFieldEntity" representedClassName="DBIssueFieldEntity" syncable="YES">
+        <attribute name="aggregatetimeoriginalestimate" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="descriptionInfo" optional="YES" attributeType="String"/>
+        <attribute name="summary" optional="YES" attributeType="String"/>
+        <attribute name="timespent" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="issue" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DBIssueEntity" inverseName="fields" inverseEntity="DBIssueEntity"/>
+        <relationship name="priority" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="DBIssuePriorityEntity" inverseName="fields" inverseEntity="DBIssuePriorityEntity"/>
+        <relationship name="status" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="DBIssueStatusEntity" inverseName="fields" inverseEntity="DBIssueStatusEntity"/>
+        <relationship name="type" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="DBIssueTypeEntity" inverseName="fields" inverseEntity="DBIssueTypeEntity"/>
+    </entity>
+    <entity name="DBIssuePriorityEntity" representedClassName="DBIssuePriorityEntity" syncable="YES">
+        <attribute name="iconUrl" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="fields" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DBIssueFieldEntity" inverseName="priority" inverseEntity="DBIssueFieldEntity"/>
+    </entity>
+    <entity name="DBIssueStatusEntity" representedClassName="DBIssueStatusEntity" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="fields" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DBIssueFieldEntity" inverseName="status" inverseEntity="DBIssueFieldEntity"/>
+    </entity>
+    <entity name="DBIssueTypeEntity" representedClassName="DBIssueTypeEntity" syncable="YES">
+        <attribute name="iconUrl" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="fields" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DBIssueFieldEntity" inverseName="type" inverseEntity="DBIssueFieldEntity"/>
+    </entity>
+    <elements>
+        <element name="DBIssueEntity" positionX="-95.04296875" positionY="-43.06640625" width="128" height="88"/>
+        <element name="DBIssueFieldEntity" positionX="-291.46484375" positionY="49.80078125" width="131.62890625" height="163"/>
+        <element name="DBIssuePriorityEntity" positionX="-318.859375" positionY="-64.9609375" width="128" height="103"/>
+        <element name="DBIssueStatusEntity" positionX="-110.35546875" positionY="110.00390625" width="128" height="73"/>
+        <element name="DBIssueTypeEntity" positionX="88.24609375" positionY="-200.5625" width="128" height="103"/>
+    </elements>
+</model>

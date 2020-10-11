@@ -45,7 +45,7 @@ target 'JiraTimeTrackerDebug' do
 	common_pods
 end
 
-target 'UnitTests' do
+target 'LogicUnitTests' do
   use_frameworks!
   common_pods
 end
