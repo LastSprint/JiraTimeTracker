@@ -12,6 +12,7 @@ final class IssueCellGenerator {
 
     var onStartTracking: Closure<IssueEntity>?
     var onEndTracking: Closure<(IssueEntity, Int)>?
+    var onSetFavorite: Closure<IssueEntity>?
 
     // MARK: - Properties
 
@@ -89,6 +90,13 @@ extension IssueCellGenerator: ViewBuilder {
             case .reload(let seconds):
                 self.stopTracking(seconds: seconds)
             }
+        }
+
+        view.onFavoritesSelected = { [weak self] in
+            guard let self = self else { return }
+            self.model.isFavorite.toggle()
+            self.cell?.setFavorite(state: self.model.isFavorite)
+            self.onSetFavorite?(self.model)
         }
     }
 }

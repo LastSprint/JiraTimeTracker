@@ -31,7 +31,7 @@ struct FavoritesStorage: FavoritesService {
                 result.emit(error: error)
             }
         }
-        return result
+        return result.dispatchOn(.main)
     }
 
     func delete(issue: IssueEntity) -> Observer<Void> {
@@ -61,7 +61,7 @@ struct FavoritesStorage: FavoritesService {
             }
         }
 
-        return result
+        return result.dispatchOn(.main)
     }
 
     func getAll() -> Observer<[IssueEntity]> {
@@ -82,6 +82,6 @@ struct FavoritesStorage: FavoritesService {
             }
         }
 
-        return result
+        return result.dispatchOn(.main)
     }
 }

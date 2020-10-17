@@ -71,6 +71,10 @@ public enum L10n {
 
   public enum TabBar {
     public enum Items {
+      public enum Favorites {
+        /// Favorites
+        public static let title = L10n.tr("Localizable", "TabBar.Items.Favorites.title")
+      }
       public enum Projects {
         /// Projects
         public static let title = L10n.tr("Localizable", "TabBar.Items.Projects.title")

@@ -62,6 +62,7 @@ final class IssueCell: UITableViewCell {
     @IBOutlet private weak var actionContentView: UIView!
     @IBOutlet private weak var timespantLabel: UILabel!
     @IBOutlet private weak var estimateLabel: UILabel!
+    @IBOutlet private weak var favoritesButton: UIButton!
 
     // MARK: - IBActions
 
@@ -70,9 +71,15 @@ final class IssueCell: UITableViewCell {
         self.onStateChanged?()
     }
 
+    @IBAction
+    private func favoritesTouched() {
+        self.onFavoritesSelected?()
+    }
+
     // MARK: - Events
 
     var onStateChanged: EmptyClosure?
+    var onFavoritesSelected: EmptyClosure?
 
     func set(state: State) {
 
@@ -102,6 +109,12 @@ final class IssueCell: UITableViewCell {
     func setLoged(seconds: Int) {
         self.timespantLabel.apply(for: .subtitle)
         self.timespantLabel.text = L10n.Issues.Labels.Spent.title(seconds.timeView)
+    }
+
+    func setFavorite(state: Bool) {
+        UIView.transition(with: self.favoritesButton, duration: 10, options: .curveEaseIn) {
+            self.favoritesButton.setImage(state.image, for: .normal)
+        } completion: { _ in }
     }
 }
 
@@ -137,8 +150,14 @@ extension IssueCell {
         self.actionButton.tintColor = state.color
 
         self.timerLabel.textAlignment = .center
+
+        self.favoritesButton.setImage(model.isFavorite.image, for: .normal)
+        self.favoritesButton.tintColor = Styles.Colors.Main.favorites.color
+        self.favoritesButton.setTitle(nil, for: .normal)
     }
 }
+
+// MARK: - Appearence
 
 private extension IssueCell {
 
@@ -156,5 +175,14 @@ private extension IssueCell {
         self.actionContentView.layer.borderColor = Styles.Colors.Main.border.color.cgColor
         self.actionContentView.layer.borderWidth = AppearenceConstants.Main.borderWidth
         self.actionContentView.layer.cornerRadius = 24
+    }
+}
+
+// MARK: - Bool + Favorite Image
+
+private extension Bool {
+    var image: UIImage {
+        return self ? Styles.Image.Issue.selectedFavorite.image :
+            Styles.Image.Issue.unselectedFavorite.image
     }
 }

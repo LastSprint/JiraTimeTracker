@@ -7,7 +7,7 @@ xcodeproj_path: JiraTimeTracker.xcodeproj
 
 ### Code generation settings section
 # The main project target name
-project_targets: [JiraTimeTrackerDebug, JiraTimeTrackerRelease]
+project_targets: [JiraTimeTrackerDebug]
 
 # The file path for new modules
 project_file_path: JiraTimeTracker/Flows
@@ -17,13 +17,13 @@ project_group_path: JiraTimeTracker/Flows
 
 ### Tests generation settings section
 # The tests target name
-test_target: UnitTests
+test_target: LogicUnitTests
 
 # The file path for new tests
-test_file_path: UnitTests/Tests/
+test_file_path: LogicUnitTests/Tests/
 
 # The Xcode group path to new tests
-test_group_path: UnitTests/Tests/
+test_group_path: LogicUnitTests/Tests/
 
 ### Dependencies settings section
 podfile_path: Podfile

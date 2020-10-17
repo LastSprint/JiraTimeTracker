@@ -15,12 +15,14 @@ final class IssuesPresenter: IssuesViewOutput, IssuesModuleInput, IssuesModuleOu
 
     private let project: ShortProjectEntity
     private let service: JiraIssuesService
+    private let favoritesService: FavoritesService
 
     weak var view: IssuesViewInput?
 
-    init(project: ShortProjectEntity, service: JiraIssuesService) {
+    init(project: ShortProjectEntity, service: JiraIssuesService, favoritesService: FavoritesService) {
         self.project = project
         self.service = service
+        self.favoritesService = favoritesService
     }
 
     // MARK: - IssuesViewOutput
@@ -65,6 +67,18 @@ final class IssuesPresenter: IssuesViewOutput, IssuesModuleInput, IssuesModuleOu
                 self?.view?.show(error: err)
                 self?.view?.restore(issue: issue, seconds: mutadedSecond)
             }
+    }
+}
+
+// MARK: - FavoritesOutput
+
+extension IssuesPresenter: FavoritesOutput {
+    func setFavorite(for issue: IssueEntity) {
+        if issue.isFavorite {
+            _ = self.favoritesService.add(issue: issue)
+        } else {
+            _ = self.favoritesService.delete(issue: issue)
+        }
     }
 }
 

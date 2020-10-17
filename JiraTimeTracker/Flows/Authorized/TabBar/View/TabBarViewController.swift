@@ -56,8 +56,8 @@ private extension TabBarViewController {
     func createTabs() {
         self.viewControllers = Tab.allCases.map { tab in
 
-            let tabItem = UITabBarItem(title: L10n.TabBar.Items.Projects.title,
-                                       image: Styles.Image.TabBar.projectsItem.image,
+            let tabItem = UITabBarItem(title: tab.name,
+                                       image: tab.icon,
                                        selectedImage: Styles.Image.TabBar.projectsItem.image.withRenderingMode(.alwaysTemplate))
 
             self.tabBar.tintColor = Styles.Colors.Main.white.color

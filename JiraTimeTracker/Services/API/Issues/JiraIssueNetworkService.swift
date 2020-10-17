@@ -7,8 +7,15 @@ import Foundation
 import NodeKit
 
 struct JiraIssuesNetworkService {
+
+    private let favoritesService: FavoritesService
+
     private var builder: AuthorizedChainBuilder<JiraIssuesRoutes> {
         .init()
+    }
+
+    init(favoritesService: FavoritesService) {
+        self.favoritesService = favoritesService
     }
 }
 
@@ -24,7 +31,19 @@ extension JiraIssuesNetworkService: JiraIssuesService {
             .process()
             .map { (model: PagingEntity) in
                 return model.issues
-            }
+            }.combine(self.favoritesService.getAll())
+            .map { (jiraIssues, favoritesIssues) in
+
+                jiraIssues.map { issue in
+                    guard favoritesIssues.contains(where: { $0.id == issue.id }) else {
+                        return issue
+                    }
+
+                    var mutable = issue
+                    mutable.isFavorite = true
+                    return mutable
+                }
+            }.dispatchOn(.main)
     }
 
     func updateWorklog(issue: IssueEntity, seconds: Int) -> Observer<Void> {

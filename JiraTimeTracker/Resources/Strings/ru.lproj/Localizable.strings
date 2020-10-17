@@ -8,6 +8,7 @@
 // MARK: - TabBar
 
 "TabBar.Items.Projects.title" = "Проекты";
+"TabBar.Items.Favorites.title" = "Избранное";
 
 // MARK: - Issues
 

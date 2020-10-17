@@ -1,12 +1,12 @@
 //
-//  IssuesViewController.swift
+//  FavoritesListViewController.swift
 //  JiraTimeTracker
 //
 
 import UIKit
 import ReactiveDataDisplayManager
 
-final class IssuesViewController: UIViewController, IssuesViewInput {
+final class FavoritesListViewController: UIViewController, FavoritesListViewInput {
 
     // MARK: - IBOutlet
 
@@ -17,8 +17,7 @@ final class IssuesViewController: UIViewController, IssuesViewInput {
     private lazy var ddm = BaseTableDataDisplayManager(collection: self.tableView)
     private var generators = [IssueCellGenerator]()
 
-    var output: IssuesViewOutput?
-    var favoritesOutput: FavoritesOutput?
+    var output: FavoritesListViewOutput?
 
     // MARK: - UIViewController
 
@@ -28,16 +27,16 @@ final class IssuesViewController: UIViewController, IssuesViewInput {
         self.view.backgroundColor = Styles.Colors.Main.background.color
         self.tableView.backgroundColor = .clear
         self.navigationController?.navigationBar.tintColor = .white
-        self.navigationItem.backBarButtonItem = .init(title: nil, style: .plain, target: nil, action: nil)
         self.tableView.separatorStyle = .none
     }
 
-    // MARK: - IssuesViewInput
+    // MARK: - FavoritesListViewInput
 
-    func setupInitialState(project: ShortProjectEntity) {
-        self.navigationItem.title = project.name
-    }
+    func setupInitialState(project: ShortProjectEntity) { }
 
+}
+
+extension FavoritesListViewController {
     func show(issues: [IssueEntity]) {
 
         self.ddm.clearCellGenerators()
@@ -53,10 +52,6 @@ final class IssuesViewController: UIViewController, IssuesViewInput {
             gen.onEndTracking = { [weak self] args in
                 let (issue, seconds) = args
                 self?.output?.stopTrackIssue(issue: issue, seconds: seconds)
-            }
-
-            gen.onSetFavorite = { [weak self] issue in
-                self?.favoritesOutput?.setFavorite(for: issue)
             }
 
             return gen
@@ -101,5 +96,4 @@ final class IssuesViewController: UIViewController, IssuesViewInput {
             gen.commitState(seconds: seconds)
         }
     }
-
 }

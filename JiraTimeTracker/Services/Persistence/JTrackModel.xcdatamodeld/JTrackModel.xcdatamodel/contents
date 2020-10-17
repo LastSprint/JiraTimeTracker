@@ -2,6 +2,7 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="19H2" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="DBIssueEntity" representedClassName="DBIssueEntity" syncable="YES">
         <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="isFavorite" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="key" optional="YES" attributeType="String"/>
         <relationship name="fields" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="DBIssueFieldEntity" inverseName="issue" inverseEntity="DBIssueFieldEntity"/>
         <uniquenessConstraints>
@@ -37,7 +38,7 @@
         <relationship name="fields" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DBIssueFieldEntity" inverseName="type" inverseEntity="DBIssueFieldEntity"/>
     </entity>
     <elements>
-        <element name="DBIssueEntity" positionX="-95.04296875" positionY="-43.06640625" width="128" height="88"/>
+        <element name="DBIssueEntity" positionX="-95.04296875" positionY="-43.06640625" width="128" height="103"/>
         <element name="DBIssueFieldEntity" positionX="-291.46484375" positionY="49.80078125" width="131.62890625" height="163"/>
         <element name="DBIssuePriorityEntity" positionX="-318.859375" positionY="-64.9609375" width="128" height="103"/>
         <element name="DBIssueStatusEntity" positionX="-110.35546875" positionY="110.00390625" width="128" height="73"/>

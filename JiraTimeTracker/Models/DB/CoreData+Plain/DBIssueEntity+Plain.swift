@@ -13,7 +13,8 @@ extension DBIssueEntity {
     func toPlain() -> IssueEntity {
         return .init(id: self.id,
                      key: self.key,
-                     fields: self.fields.toPlain())
+                     fields: self.fields.toPlain(),
+                     isFavorite: self.isFavorite)
     }
 
     static func fromPlain(context: NSManagedObjectContext,
@@ -22,6 +23,7 @@ extension DBIssueEntity {
         let model = DBIssueEntity(context: context)
         model.id = plain.id
         model.key = plain.key
+        model.isFavorite = plain.isFavorite
         model.fields = .fromPlain(context: context, plain: plain.fields)
 
         return model

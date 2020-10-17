@@ -18,6 +18,8 @@ extension DBIssueEntity {
 
     @NSManaged public var id: String
     @NSManaged public var key: String
+    @NSManaged public var isFavorite: Bool
     @NSManaged public var fields: DBIssueFieldEntity
+
 
 }

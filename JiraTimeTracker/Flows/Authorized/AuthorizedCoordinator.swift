@@ -31,6 +31,8 @@ private extension AuthorizedCoordinator {
             switch tab {
             case .projects:
                 self?.runProjects()
+            case .favorites:
+                self?.runFavorites()
             }
         }
 
@@ -44,6 +46,12 @@ private extension AuthorizedCoordinator {
 
         self.addDependency(flow)
 
+        flow.start()
+    }
+
+    func runFavorites() {
+        let flow = FavoritesCoordinator(router: self.router)
+        self.addDependency(flow)
         flow.start()
     }
 }

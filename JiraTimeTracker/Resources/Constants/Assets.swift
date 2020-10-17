@@ -26,6 +26,7 @@ public enum Styles {
       public static let control = ColorAsset(name: "Colors/main/control")
       public static let description = ColorAsset(name: "Colors/main/description")
       public static let error = ColorAsset(name: "Colors/main/error")
+      public static let favorites = ColorAsset(name: "Colors/main/favorites")
       public static let success = ColorAsset(name: "Colors/main/success")
       public static let topLevelControl = ColorAsset(name: "Colors/main/topLevelControl")
       public static let warning = ColorAsset(name: "Colors/main/warning")
@@ -37,7 +38,9 @@ public enum Styles {
     public enum Issue {
       public static let play = ImageAsset(name: "image/Issue/play")
       public static let reload = ImageAsset(name: "image/Issue/reload")
+      public static let selectedFavorite = ImageAsset(name: "image/Issue/selectedFavorite")
       public static let stop = ImageAsset(name: "image/Issue/stop")
+      public static let unselectedFavorite = ImageAsset(name: "image/Issue/unselectedFavorite")
     }
     public enum NavBar {
       public static let backArrow = ImageAsset(name: "image/NavBar/backArrow")
